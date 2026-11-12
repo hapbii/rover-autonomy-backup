@@ -1,0 +1,21 @@
+{
+  "scenario": "image",
+  "domain": 190,
+  "hardware_output": false,
+  "physical_camera": false,
+  "range_is_virtual": true,
+  "passed": true,
+  "commands": 32,
+  "vision_sequence": 26,
+  "max_linear": 0.004407483040790536,
+  "max_angular": 0.28105813264846796,
+  "reasons": [
+    "disarmed",
+    "emergency_stop",
+    "hand_follow_relative_palm_size"
+  ],
+  "hand_detected": true,
+  "elapsed_seconds": 9.390320293000059,
+  "launch_exit_code": 0,
+  "traceback_in_log": false
+}

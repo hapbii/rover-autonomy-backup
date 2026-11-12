@@ -1,0 +1,21 @@
+{
+  "scenario": "simulation",
+  "domain": 190,
+  "hardware_output": false,
+  "physical_camera": false,
+  "range_is_virtual": true,
+  "passed": true,
+  "commands": 26,
+  "vision_sequence": 65,
+  "max_linear": 0.1,
+  "max_angular": 0.0,
+  "reasons": [
+    "camera_line_follow",
+    "disarmed",
+    "emergency_stop"
+  ],
+  "hand_detected": false,
+  "elapsed_seconds": 8.650538665999989,
+  "launch_exit_code": 0,
+  "traceback_in_log": false
+}

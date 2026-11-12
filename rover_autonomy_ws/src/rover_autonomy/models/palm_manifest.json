@@ -1,0 +1,7 @@
+{
+  "commit": "48b10fa505aeb51fbd127fc60a5c660040e823b7",
+  "file": "palm_detection_mediapipe_2023feb.onnx",
+  "sha256": "78ff51c38496b7fc8b8ebdb6cc8c1abb02fa6c38427c6848254cdaba57fcce7c",
+  "license": "Apache-2.0",
+  "source": "models/palm_detection_mediapipe/palm_detection_mediapipe_2023feb.onnx"
+}

@@ -1,0 +1,390 @@
+{
+  "frames_after_warmup": 30000,
+  "warmup_frames": 1200,
+  "hand_stride": 8,
+  "real_palm_inferences": 5850,
+  "elapsed_seconds": 838.538254799787,
+  "baseline": {
+    "rss": 68632576,
+    "traced": 273921,
+    "objects": 32827,
+    "threads": 21,
+    "handles": 322
+  },
+  "final": {
+    "rss": 69746688,
+    "traced": 302160,
+    "objects": 31579,
+    "threads": 16,
+    "handles": 320
+  },
+  "growth": {
+    "rss": 1114112,
+    "traced": 28239,
+    "objects": -1248,
+    "threads": -5,
+    "handles": -2
+  },
+  "samples": [
+    {
+      "frames": 500,
+      "rss": 67952640,
+      "traced": 282426
+    },
+    {
+      "frames": 1000,
+      "rss": 67923968,
+      "traced": 285500
+    },
+    {
+      "frames": 1500,
+      "rss": 68390912,
+      "traced": 285772
+    },
+    {
+      "frames": 2000,
+      "rss": 68390912,
+      "traced": 286188
+    },
+    {
+      "frames": 2500,
+      "rss": 67923968,
+      "traced": 286460
+    },
+    {
+      "frames": 3000,
+      "rss": 67936256,
+      "traced": 286780
+    },
+    {
+      "frames": 3500,
+      "rss": 68411392,
+      "traced": 287007
+    },
+    {
+      "frames": 4000,
+      "rss": 68399104,
+      "traced": 287279
+    },
+    {
+      "frames": 4500,
+      "rss": 67940352,
+      "traced": 287551
+    },
+    {
+      "frames": 5000,
+      "rss": 67940352,
+      "traced": 287823
+    },
+    {
+      "frames": 5500,
+      "rss": 68382720,
+      "traced": 288095
+    },
+    {
+      "frames": 6000,
+      "rss": 68382720,
+      "traced": 288367
+    },
+    {
+      "frames": 6500,
+      "rss": 67940352,
+      "traced": 288639
+    },
+    {
+      "frames": 7000,
+      "rss": 67940352,
+      "traced": 288911
+    },
+    {
+      "frames": 7500,
+      "rss": 68386816,
+      "traced": 289183
+    },
+    {
+      "frames": 8000,
+      "rss": 68386816,
+      "traced": 289455
+    },
+    {
+      "frames": 8500,
+      "rss": 67944448,
+      "traced": 289727
+    },
+    {
+      "frames": 9000,
+      "rss": 67944448,
+      "traced": 290000
+    },
+    {
+      "frames": 9500,
+      "rss": 68386816,
+      "traced": 290272
+    },
+    {
+      "frames": 10000,
+      "rss": 69308416,
+      "traced": 290544
+    },
+    {
+      "frames": 10500,
+      "rss": 67952640,
+      "traced": 290816
+    },
+    {
+      "frames": 11000,
+      "rss": 67952640,
+      "traced": 291088
+    },
+    {
+      "frames": 11500,
+      "rss": 69763072,
+      "traced": 291360
+    },
+    {
+      "frames": 12000,
+      "rss": 69791744,
+      "traced": 291632
+    },
+    {
+      "frames": 12500,
+      "rss": 68009984,
+      "traced": 291904
+    },
+    {
+      "frames": 13000,
+      "rss": 68009984,
+      "traced": 292176
+    },
+    {
+      "frames": 13500,
+      "rss": 69373952,
+      "traced": 292448
+    },
+    {
+      "frames": 14000,
+      "rss": 69353472,
+      "traced": 292720
+    },
+    {
+      "frames": 14500,
+      "rss": 68050944,
+      "traced": 292992
+    },
+    {
+      "frames": 15000,
+      "rss": 67928064,
+      "traced": 293264
+    },
+    {
+      "frames": 15500,
+      "rss": 69165056,
+      "traced": 293536
+    },
+    {
+      "frames": 16000,
+      "rss": 70041600,
+      "traced": 293808
+    },
+    {
+      "frames": 16500,
+      "rss": 68235264,
+      "traced": 294080
+    },
+    {
+      "frames": 17000,
+      "rss": 68304896,
+      "traced": 294880
+    },
+    {
+      "frames": 17500,
+      "rss": 69234688,
+      "traced": 295152
+    },
+    {
+      "frames": 18000,
+      "rss": 69783552,
+      "traced": 295424
+    },
+    {
+      "frames": 18500,
+      "rss": 68386816,
+      "traced": 295696
+    },
+    {
+      "frames": 19000,
+      "rss": 68386816,
+      "traced": 295968
+    },
+    {
+      "frames": 19500,
+      "rss": 69787648,
+      "traced": 296240
+    },
+    {
+      "frames": 20000,
+      "rss": 69787648,
+      "traced": 296512
+    },
+    {
+      "frames": 20500,
+      "rss": 68415488,
+      "traced": 296784
+    },
+    {
+      "frames": 21000,
+      "rss": 68472832,
+      "traced": 297056
+    },
+    {
+      "frames": 21500,
+      "rss": 69550080,
+      "traced": 297328
+    },
+    {
+      "frames": 22000,
+      "rss": 69853184,
+      "traced": 297600
+    },
+    {
+      "frames": 22500,
+      "rss": 68317184,
+      "traced": 297872
+    },
+    {
+      "frames": 23000,
+      "rss": 68313088,
+      "traced": 298144
+    },
+    {
+      "frames": 23500,
+      "rss": 69754880,
+      "traced": 298416
+    },
+    {
+      "frames": 24000,
+      "rss": 69758976,
+      "traced": 298688
+    },
+    {
+      "frames": 24500,
+      "rss": 68370432,
+      "traced": 298960
+    },
+    {
+      "frames": 25000,
+      "rss": 68366336,
+      "traced": 299232
+    },
+    {
+      "frames": 25500,
+      "rss": 69730304,
+      "traced": 299504
+    },
+    {
+      "frames": 26000,
+      "rss": 69746688,
+      "traced": 299776
+    },
+    {
+      "frames": 26500,
+      "rss": 68288512,
+      "traced": 300048
+    },
+    {
+      "frames": 27000,
+      "rss": 68288512,
+      "traced": 300320
+    },
+    {
+      "frames": 27500,
+      "rss": 69734400,
+      "traced": 300592
+    },
+    {
+      "frames": 28000,
+      "rss": 69734400,
+      "traced": 300864
+    },
+    {
+      "frames": 28500,
+      "rss": 68296704,
+      "traced": 301136
+    },
+    {
+      "frames": 29000,
+      "rss": 68296704,
+      "traced": 301408
+    },
+    {
+      "frames": 29500,
+      "rss": 69734400,
+      "traced": 301680
+    },
+    {
+      "frames": 30000,
+      "rss": 69746688,
+      "traced": 301952
+    }
+  ],
+  "tail_traced_growth": 12769,
+  "processing_ms_recent_median": 4.296300001442432,
+  "processing_ms_recent_p95": 213.73070994159204,
+  "bounded_state": {
+    "camera_observations": 1,
+    "sign_history": 3,
+    "serial_rx_buffer": 0,
+    "test_wire_queue": 31,
+    "test_wire_history": 4
+  },
+  "python_top_growth": [
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_soak.py:150",
+      "bytes": 11040,
+      "count": 120
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\.venv\\Lib\\site-packages\\numpy\\core\\fromnumeric.py:59",
+      "bytes": 10575,
+      "count": 235
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_soak.py:151",
+      "bytes": 1920,
+      "count": 60
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\.venv\\Lib\\site-packages\\psutil\\_pswindows.py:791",
+      "bytes": 1856,
+      "count": 63
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_soak.py:153",
+      "bytes": 1680,
+      "count": 60
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_soak.py:155",
+      "bytes": 528,
+      "count": 1
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_soak.py:135",
+      "bytes": 384,
+      "count": 16
+    },
+    {
+      "location": "C:\\Users\\happy\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tracemalloc.py:560",
+      "bytes": 312,
+      "count": 2
+    }
+  ],
+  "thresholds": {
+    "retained_python_bytes": 2097152,
+    "rss_growth_bytes": 25165824,
+    "handle_growth": 2,
+    "tail_retained_python_bytes": 262144
+  },
+  "scope": "Windows local process; real OpenCV models and core logic, virtual serial, no ROS middleware/Pi camera/native Pi driver soak.",
+  "passed": true
+}

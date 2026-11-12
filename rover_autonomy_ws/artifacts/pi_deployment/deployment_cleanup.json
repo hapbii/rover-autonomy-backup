@@ -1,0 +1,29 @@
+{
+  "workspace": "/home/takyeji/robot_ws",
+  "backup": "/home/takyeji/robot_ws_backup_20261112_094404",
+  "backup_verified": true,
+  "bundle_sha256": "7ea46fe17513afb45f1ed85727f4bc2d45747a978e4e1aa3fe2bc70b33702e33",
+  "source_manifest_files_verified": 83,
+  "removed_paths": [
+    "build",
+    "install",
+    "log",
+    "src/robot_base",
+    "src/robot_mission",
+    "src/robot_bringup",
+    "src/encoder_motor",
+    "firmware/two_motor_test",
+    "firmware/two_motor_test_stby13",
+    "firmware/three_ir_four_encoder",
+    "firmware/robot_arduino",
+    "scripts/setup_pi.sh"
+  ],
+  "preserved": [
+    ".git",
+    "firmware/backups"
+  ],
+  "staging": "/home/takyeji/.rover_stage_20261112_095215",
+  "hardware_enabled": false,
+  "firmware_uploaded": false,
+  "at": "2026-11-12T09:52:16.398867+00:00"
+}

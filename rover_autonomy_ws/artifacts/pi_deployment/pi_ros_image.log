@@ -1,0 +1,19 @@
+[INFO] [launch]: All log files can be found below /home/takyeji/.ros/log/2026-11-12-10-01-50-941183-tak-2001
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [camera_node-1]: process started with pid [2013]
+[INFO] [perception_node-2]: process started with pid [2014]
+[INFO] [supervisor_node-3]: process started with pid [2015]
+[INFO] [base_node-4]: process started with pid [2016]
+[base_node-4] [INFO] [1794477714.339546451] [rover_base]: DRY RUN: no serial port is opened
+[supervisor_node-3] [INFO] [1794477714.453560026] [rover_supervisor]: disarmed
+[supervisor_node-3] [INFO] [1794477717.234076691] [rover_supervisor]: hand_follow_relative_palm_size
+[supervisor_node-3] [INFO] [1794477717.286256891] [rover_supervisor]: emergency_stop
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [base_node-4]: sending signal 'SIGINT' to process[base_node-4]
+[INFO] [supervisor_node-3]: sending signal 'SIGINT' to process[supervisor_node-3]
+[INFO] [perception_node-2]: sending signal 'SIGINT' to process[perception_node-2]
+[INFO] [camera_node-1]: sending signal 'SIGINT' to process[camera_node-1]
+[INFO] [perception_node-2]: process has finished cleanly [pid 2014]
+[INFO] [base_node-4]: process has finished cleanly [pid 2016]
+[INFO] [camera_node-1]: process has finished cleanly [pid 2013]
+[INFO] [supervisor_node-3]: process has finished cleanly [pid 2015]

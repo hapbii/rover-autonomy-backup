@@ -1,0 +1,3325 @@
+{
+  "dataset": "C:\\Users\\happy\\OneDrive\\바탕 화면\\ORCA PROJ 폴더\\새 폴더\\yolo_dataset",
+  "method": "HSV + circularity + black-arrow geometry",
+  "evaluation": "All existing images; no training on this dataset; IoU >= 0.3, matching class, one-to-one",
+  "ground_truth": 565,
+  "predictions": 330,
+  "true_positives": 21,
+  "precision": 0.06363636363636363,
+  "recall": 0.03716814159292035,
+  "per_class": {
+    "green_light": {
+      "total": 115,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "red_light": {
+      "total": 117,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "left": {
+      "total": 160,
+      "correct": 10,
+      "recall": 0.0625
+    },
+    "right": {
+      "total": 173,
+      "correct": 11,
+      "recall": 0.06358381502890173
+    }
+  },
+  "latency_ms_median": 11.015599826350808,
+  "latency_ms_p95": 14.134899899363516,
+  "missing_images": [],
+  "missed_detections": [
+    {
+      "file": "20260921_061938_054211",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_061942_323483",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062620_453800",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062620_518826",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062658_245367",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062658_378928",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062658_645584",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062735_505980",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062735_572226",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062735_638854",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062735_775315",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062735_906968",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062751_772813",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062751_902473",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062752_035747",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062752_170495",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062756_568151",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062756_701500",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062756_837821",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062757_038432",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062758_034743",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062758_234663",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062758_370332",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062758_436420",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062800_567226",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062800_702338",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062803_633477",
+      "truth": "green_light",
+      "predicted": [
+        "green_light"
+      ]
+    },
+    {
+      "file": "20260921_062803_770279",
+      "truth": "green_light",
+      "predicted": [
+        "green_light"
+      ]
+    },
+    {
+      "file": "20260921_062803_899989",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062809_832688",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062809_900716",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062813_766270",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062813_831922",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062814_031869",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062814_100370",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260921_062821_563861",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062821_630664",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062821_765675",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062821_832114",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062857_025038",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062857_091777",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062857_157692",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062900_091803",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062900_225304",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062900_357447",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062903_156119",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062903_223258",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062903_356399",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062932_354362",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062932_551172",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062932_619444",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062933_950284",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062934_150941",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062934_217775",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062936_150163",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062936_351282",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062937_617108",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062937_816959",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062941_683629",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062942_149559",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062943_017595",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062943_418205",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062947_083690",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062947_215258",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260921_062947_282064",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050345_278119",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050345_411722",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050345_677600",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050345_943027",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_144475",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_209773",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_409545",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_542907",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_677723",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050346_809562",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_010993",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_209992",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_344440",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_543433",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_742908",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050347_878276",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050348_142567",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050348_344180",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_142092",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_210500",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_343706",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_542106",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_676901",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050351_875381",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_075330",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_208605",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_343507",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_543298",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_676851",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050352_875155",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050353_343350",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050356_874381",
+      "truth": "green_light",
+      "predicted": [
+        "left"
+      ]
+    },
+    {
+      "file": "20260928_050357_010696",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_140687",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_274350",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_474298",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_541084",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_740674",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050357_874289",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_009014",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_207540",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_342365",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_472341",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_675678",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050358_809050",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050406_872614",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_007831",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_139231",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_272589",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_539705",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_674307",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_808001",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050407_939043",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050408_007803",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050408_205666",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050408_273179",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050408_472399",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050408_539171",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_006675",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_140037",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_273406",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_471775",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_538653",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_738426",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050411_805211",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050412_004415",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050412_071698",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050412_205040",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050412_405048",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050413_204814",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050416_405909",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050416_540703",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050416_672601",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050416_871376",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_070788",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_269944",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_404226",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_540522",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_673889",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050417_870683",
+      "truth": "green_light",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050422_672912",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050422_803028",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_004693",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_071518",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_213568",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_337848",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_469094",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_603744",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_736797",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050423_869257",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050424_004597",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050424_136330",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050424_203046",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050426_870730",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050426_936598",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_068877",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_268982",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_402341",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_535680",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_670515",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_803824",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050427_935047",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050428_068880",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050428_337058",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050428_468480",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050428_670311",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050428_735638",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_068053",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_202680",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_336499",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_468152",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_601379",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050432_868125",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_002870",
+      "truth": "red_light",
+      "predicted": [
+        "red_light",
+        "green_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_134652",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_267951",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_402808",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_534633",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_669404",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050433_867909",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050436_400794",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050436_535521",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050436_669162",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050436_867477",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_002399",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_200673",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_335571",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_466827",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_600628",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050437_935325",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050438_133679",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050438_267763",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_117432",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_183709",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_251546",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_384052",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_517328",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050610_652443",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050621_649549",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050621_848653",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050621_983571",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_050351",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_250858",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_316905",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_448745",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_581987",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_715276",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_781382",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_915515",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050622_983437",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050623_114739",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050626_581181",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050626_714461",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050626_847865",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050626_984061",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_114471",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_247783",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_318537",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_447547",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_580812",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_714251",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_847349",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050627_982922",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050628_114184",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050628_248269",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050628_382296",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050628_651295",
+      "truth": "red_light",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050639_912152",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050640_045408",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050640_178687",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050640_246191",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050640_378722",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050640_447130",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050640_578315",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050640_712006",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050640_912644",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050641_111377",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050641_244838",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050641_378498",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050641_511843",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050641_579327",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050641_711799",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050641_845078",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050641_911912",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_046716",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050642_178336",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_313473",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_444972",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_513406",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_648501",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050642_913531",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050643_044581",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050643_178180",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050643_244995",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050643_444862",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050646_645794",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050646_777520",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050646_911563",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050646_979234",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_044370",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_242123",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_312837",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_443962",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_579660",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_710725",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_844066",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050647_910838",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050648_044022",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050648_110828",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050648_312194",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050648_377384",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050648_510566",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050648_645427",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050648_777007",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050648_843862",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050648_978750",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050649_110337",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050652_176428",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_312906",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_443402",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_510415",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_709816",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_776620",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050652_978450",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_043257",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_176025",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_311475",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_509653",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_577540",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_778834",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050653_909590",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050654_043471",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050654_176324",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050654_312798",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050658_442555",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050658_506879",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050658_643698",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050658_708365",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_108792",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_244545",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_374941",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_441962",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_643482",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050659_841846",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050700_108535",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050700_175402",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050700_309927",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050700_441735",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050700_976862",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050701_108376",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050701_175196",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050704_374477",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050704_442269",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050704_707752",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050704_774482",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050705_173706",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050705_311657",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050705_574931",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050705_707642",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050705_907529",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_040816",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_107619",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_309518",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_376340",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_507523",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050706_775520",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050709_573590",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050709_641793",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050709_709849",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050709_840206",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_040133",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_106899",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050710_308330",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050710_373509",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_506114",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_641503",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_773238",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050710_907394",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050711_039928",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050711_106680",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050711_239722",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050711_373114",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050711_506386",
+      "truth": "left",
+      "predicted": [
+        "red_light",
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050711_641352",
+      "truth": "left",
+      "predicted": [
+        "red_light"
+      ]
+    },
+    {
+      "file": "20260928_050718_838609",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050718_973339",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050719_104984",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_238433",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050719_371786",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_504857",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_639952",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_771700",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_838407",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050719_973145",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050720_104957",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050720_238943",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050720_371611",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050720_504829",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050720_771513",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050720_905476",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050721_173110",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050721_306306",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050721_371586",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050721_572111",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050721_639703",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050721_837927",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050737_436900",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050737_570859",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050737_701784",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050737_835168",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_101703",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_235461",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_368439",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_501637",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_637874",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050738_768331",
+      "truth": "left",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050738_902268",
+      "truth": "left",
+      "predicted": [
+        "right"
+      ]
+    },
+    {
+      "file": "20260928_050743_567802",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050743_700802",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050743_767647",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050743_900724",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050743_969033",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_167423",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_234734",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_366801",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_433914",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_635524",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_702382",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_835956",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050744_901375",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_100518",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_167661",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_301104",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_433738",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_567830",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_635491",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_767190",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050745_901626",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_033650",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_166976",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_301819",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_433608",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_500434",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050746_636852",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_233170",
+      "truth": "right",
+      "predicted": [
+        "green_light"
+      ]
+    },
+    {
+      "file": "20260928_050749_301864",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_433633",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_566478",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_699181",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_766351",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050749_968296",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050750_033107",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050750_432956",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050750_699568",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050750_832819",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050750_968062",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050751_098871",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050751_301224",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050751_499377",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050751_769748",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050751_967867",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_365680",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_432337",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_499003",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_633770",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_833911",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050754_967011",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_098688",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_231569",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_364850",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_498625",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_699454",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_833364",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050755_966831",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050756_165183",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050756_300220",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050756_431912",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050756_565101",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050756_899141",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050757_032266",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050757_299640",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050759_764683",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050759_898455",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_031222",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_164459",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_299378",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_431337",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_632699",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_764488",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050800_898359",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_097617",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_230939",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_364322",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_498021",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_697621",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050801_831887",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_032365",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_164181",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_300656",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_430725",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_564227",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_764053",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050802_898019",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050803_030994",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050803_163646",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050806_495867",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050806_632905",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050806_829960",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050806_964678",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_096609",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_229321",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_429821",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_563535",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_696516",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050807_896479",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_032352",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_162547",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_362917",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_563029",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_631373",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050808_829432",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_162775",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_229415",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_428828",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_563412",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_694868",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050813_828800",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_029083",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_162030",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_296986",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_428698",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_632011",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_761929",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050814_897046",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050815_096765",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050815_161970",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050815_361814",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050815_495178",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050819_360998",
+      "truth": "right",
+      "predicted": [
+        "left"
+      ]
+    },
+    {
+      "file": "20260928_050819_492790",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050819_761044",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050819_893749",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_027747",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_161010",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_295899",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_494247",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_628322",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050820_894844",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050821_094131",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050821_227421",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050821_427492",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050821_495249",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050823_828501",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050823_896445",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_027745",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_160112",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_295553",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_425806",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_560266",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_693476",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_894127",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050824_962380",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050825_160165",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050825_295505",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050827_628072",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050827_693132",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050827_759747",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050827_892886",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_026226",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_159543",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_294320",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_561835",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_825824",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050828_964107",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050829_092717",
+      "truth": "right",
+      "predicted": [
+        "left"
+      ]
+    },
+    {
+      "file": "20260928_050829_294268",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050829_359641",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050830_759039",
+      "truth": "right",
+      "predicted": []
+    },
+    {
+      "file": "20260928_050830_825798",
+      "truth": "right",
+      "predicted": []
+    }
+  ],
+  "limitations": "Controlled dataset scenes are not proof of generalization to a different room, lighting or sign design."
+}

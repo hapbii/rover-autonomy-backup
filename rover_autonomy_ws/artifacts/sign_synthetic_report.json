@@ -1,0 +1,10 @@
+{
+  "kind": "synthetic geometry regression only",
+  "training_used": false,
+  "real_photographs": 0,
+  "cases": 162,
+  "passed_cases": 162,
+  "failures": [],
+  "passed": true,
+  "limitations": "Generated color/shape patterns are not an independent recognition benchmark or a real-camera test."
+}

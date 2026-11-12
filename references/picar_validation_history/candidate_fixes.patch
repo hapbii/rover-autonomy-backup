@@ -1,0 +1,64 @@
+--- a/web/WebServer.py
++++ b/web/WebServer.py
+@@ -253,9 +253,9 @@
+ 
+ 
+     elif 'home' == command_input:
+-        P_sc.moveServoInit([init_pwm1])
+-        T_sc.moveServoInit([init_pwm0])
+-        scGear.moveServoInit([init_pwm2])
++        P_sc.moveServoInit([1])
++        T_sc.moveServoInit([2])
++        scGear.moveServoInit([0])
+ 
+ 
+ def configPWM(command_input, response):
+--- a/web/RPIservo.py
++++ b/web/RPIservo.py
+@@ -148,7 +148,7 @@
+                     self.posUpdate()
+                     time.sleep(self.scTime/self.scSteps)
+                     return 1
+-            time.sleep((self.scTime/self.scSteps - self.scMoveTime))
++            time.sleep(max(0.0, self.scTime/self.scSteps - self.scMoveTime))
+ 
+         self.posUpdate()
+         self.pause()
+--- a/web/base_camera.py
++++ b/web/base_camera.py
+@@ -32,7 +32,7 @@
+         now = time.time()
+         remove = None
+         for ident, event in self.events.items():
+-            if not event[0].isSet():
++            if not event[0].is_set():
+                 # if this client's event is not set, then set it
+                 # also update the last set timestamp to now
+                 event[0].set()
+--- a/web/functions.py
++++ b/web/functions.py
+@@ -207,16 +207,14 @@
+ 		print(status_left,status_middle,status_right)
+ 		time.sleep(0.1)
+ 
+-	def distRedress(self): 
+-		mark = 0
+-		distValue = ultra.checkdist()
+-		while True:
+-			distValue = ultra.checkdist()
+-			if distValue > 200:
+-				mark +=  1
+-			elif mark > 5 or distValue <200:
+-					break
+-		return round(distValue,2)
++	def distRedress(self):
++		# Candidate: bounded sensor reads; stop on sustained invalid samples.
++		for _ in range(6):
++			value = ultra.checkdist()
++			if isinstance(value, (int, float)) and 0 <= value <= 200:
++				return round(value, 2)
++		move.motorStop()
++		raise RuntimeError("No valid distance after 6 samples")
+ 
+ 	def automaticProcessing(self):
+ 		print('automaticProcessing')

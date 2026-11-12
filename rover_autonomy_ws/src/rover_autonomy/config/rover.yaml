@@ -1,0 +1,49 @@
+camera:
+  backend: picamera2
+  source: 0
+  width: 640
+  height: 480
+  fps: 12.0
+  rotate_180: false
+perception:
+  sign_backend: geometry
+  # No real project-specific sign photographs have been supplied/validated.
+  experimental_sign_model_path: null
+  image_transport: compressed
+  image_topic: /rover/camera/compressed
+  fps: 8.0
+  dark_line: true
+  line_threshold: 75
+  roi_top: 0.58
+  palm_confidence: 0.65
+  # Leave zero until measured. Without these, hand distance control uses relative palm size.
+  calibrated_fx: 0.0
+  calibrated_image_width: 640
+  palm_width_m: 0.0
+controller:
+  cruise_speed: 0.10
+  max_speed: 0.15
+  max_angular: 0.7
+  obstacle_distance: 0.28
+  clearance_distance: 0.42
+  hard_stop_distance: 0.13
+  hand_target_area: 0.045
+  hand_stop_area: 0.075
+  hand_target_distance: 0.55
+  hand_stop_distance: 0.40
+hardware:
+  enabled: false
+  calibrated: false
+  port: /dev/ttyACM0
+  baud: 115200
+  # Must measure all three; 0 prevents live output.
+  wheel_radius_m: 0.0
+  track_width_m: 0.0
+  encoder_ticks_per_rev: 0
+  encoder_signs: [1, 1, 1, 1]  # left front, right front, left rear, right rear
+  max_rpm: 60.0
+  max_pwm: 80
+  pid_kp: 0.8
+  pid_ki: 0.3
+  pid_kd: 0.0
+  feedforward: 1.1

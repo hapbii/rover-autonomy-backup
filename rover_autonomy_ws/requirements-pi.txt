@@ -1,0 +1,6 @@
+# Python 3.12, ROS 2 Jazzy. Use a venv with --system-site-packages for rclpy/libcamera.
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+PyYAML==6.0.3
+pyserial==3.5
+colcon-common-extensions>=0.3,<1

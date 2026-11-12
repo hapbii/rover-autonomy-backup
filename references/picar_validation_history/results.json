@@ -1,0 +1,2338 @@
+{
+  "metadata": {
+    "python": "3.13.5 (main, Jul 23 2025, 00:30:06) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "websockets": "13.0",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0",
+    "source_sha256": {
+      "examples\\01_LED.py": "83dbad5d2ba133121220038fd967226b801be0e76c21240f3132d70bd7d3e305",
+      "examples\\02_buzzer.py": "57d009f45820e923ad6a7a777710be5bfd480ad9603c56ee7aa96647dcb828df",
+      "examples\\03_servo.py": "6c8837a0f528588d2bf374005a91e6036b58f089a6254cf22e9e2a3098a5cce3",
+      "examples\\04_motor.py": "8194ba69db9d2d642c56a1212f3787ce0e25683ec0d8d2742ca8a968d0569f4c",
+      "examples\\05_RGB.py": "5895597459186e8f65977e774d2b96ed4e751e3e3e4521365a815de8fbd6d9f4",
+      "examples\\06_Spi_WS2812.py": "af61f62b31c1ab62380cb2add80c1913402a7d85e8d3edc9d2118cf22f848fce",
+      "examples\\06_ws2812.py": "c99855a1518f454d032e4de74814d8d40ec0801888a2f535a1244e9fde1b47ce",
+      "examples\\07_ultra.py": "0b9ad7efbad2c54b1344b204313eef52545cc4095e2734bd99d5575627f4d10f",
+      "examples\\08_lineTracking.py": "d41ff7fb7093dd1fb47907acebd05d0cfc1c3a274dee3fe1948448be28ff93ca",
+      "examples\\09_lightTracking.py": "2d8c953f44ab5466b202452047994a0c3ad1b09432e60d5cd193a2b1514acee3",
+      "examples\\10_BatteryLevelMonitoring.py": "85de400612b6790fd5bb24be4c5b7824cd89cba688533e5ce7b005d6b3bd330d",
+      "examples\\11_Speech_Recognition\\Speech.py": "b7958eb7dc8311cc3948f0452ac73e817727c9982b100486f923d161afd3119e",
+      "examples\\11_Speech_Recognition\\Speech_Recognition.py": "8637e73c7c64e49f099f797e7811fe8abadce27ba3ccdb62d93964720d0d0a59",
+      "examples\\11_Speech_Recognition\\Text.py": "8777842ad9689be2a29c6920afe591f5d4e243f923992ad49fda6d16f0c3fd80",
+      "initPosServos.py": "a56f843b7e2694d7f0204c9f35d872d9d194364deafd62e0fafe76748126d4f1",
+      "setup.py": "23e65984740f29adea67eecbb4477ae79b222a4f48ef552f2d8340dc31909b92",
+      "web\\app.py": "1be5600009923cd8f18cc78f70219b5da3749625a1c86d0780567346635dbfd4",
+      "web\\APPServer.py": "22402a79245cb7354a87831f7a395c2931f23eaef393560a7f8d952d93cf2db1",
+      "web\\base_camera.py": "cf3913aa1282153bb0d26c600e738c981b7c7eb68b3e388dce7d8be56971ba0f",
+      "web\\Buzzer.py": "72ca668e0fde0df942f8ef3545529930a09b25d8f42275b079ea592477bbcee4",
+      "web\\camera_opencv.py": "edd10e25eb8efad0e769e6927332166a3e50528248fb5778647c701c5eebb93e",
+      "web\\functions.py": "11a6add2457d132d19ea94668366105aba3be1b405f5a13a7037fde29c7cccf8",
+      "web\\info.py": "e8bcf42775a5c62419c7db915f6ce919b1b6bdfb9852fc8a3c955d9d3793d180",
+      "web\\ir_control.py": "20de07e7844610e25b7238e94a985672216054dbb5f02b7940899714b452292e",
+      "web\\Kalman_filter.py": "58101893ec5aa47205529a93e54f8eed016294781eedf1cb783b7977c14a99c6",
+      "web\\move.py": "b2065d5fd8de2ca584befae95e2c3c8c9e4bc5c77f336585f5a565347e442101",
+      "web\\PID.py": "7499d61ea92b90d2fe0ed6f2622158833d1eef35283f39f27fb6458f4f2fa02a",
+      "web\\robotLight.py": "10fe16a42c848048fbf578f80bcb996045a2121a2e341615e843e25e6794e98e",
+      "web\\RPIservo.py": "7ec3c4a0506115c777835a50bcf1030845703516961698fd71b553a392bde8d2",
+      "web\\switch.py": "664510630a0172d0e6d1bf860b1d671ad221461746fa8e8270b6e09a80786eb1",
+      "web\\ultra.py": "01d88238a4b6a284be355be6585f7e2954e0da187eeebdd3df20f3c8b8dcfcdf",
+      "web\\Voice_Command.py": "cc96dc38c21ce63fa391e62dbcbad47894856aabd515ea18f26904bd93522882",
+      "web\\VoiceIdentify.py": "e7cae5d20c17d3369249133aba75f441bf0fadf4456798f62eb6211c13e62da3",
+      "web\\Voltage.py": "7d4fc99c61180f73dd1bd5319524d1ed983909ad7f19b91913268e24a532c507",
+      "web\\WebServer.py": "8a792b776720d1fb1d8d79e80d75264ac5aad3f692a9d8eabcdc7b146fa60698"
+    }
+  },
+  "summary": {
+    "PASS": 98,
+    "DEFECT": 31,
+    "OBSERVATION": 7
+  },
+  "tests": [
+    {
+      "id": "SYN-11",
+      "group": "static",
+      "title": "All vendor Python files parse",
+      "status": "PASS",
+      "detail": {
+        "files": 35,
+        "grammar": "(3, 11)",
+        "runtime": "3.13.5",
+        "note": "grammar check only; not runtime or target OS compatibility"
+      },
+      "severity": "",
+      "elapsed_ms": 53.34,
+      "warnings": []
+    },
+    {
+      "id": "SYN-13",
+      "group": "static",
+      "title": "All vendor Python files parse",
+      "status": "PASS",
+      "detail": {
+        "files": 35,
+        "grammar": "(3, 13)",
+        "runtime": "3.13.5",
+        "note": "grammar check only; not runtime or target OS compatibility"
+      },
+      "severity": "",
+      "elapsed_ms": 53.78,
+      "warnings": []
+    },
+    {
+      "id": "SYN-14",
+      "group": "static",
+      "title": "All vendor Python files parse",
+      "status": "PASS",
+      "detail": {
+        "files": 35,
+        "grammar": "(3, 14)",
+        "runtime": "3.13.5",
+        "note": "grammar check only; not runtime or target OS compatibility"
+      },
+      "severity": "",
+      "elapsed_ms": 50.39,
+      "warnings": []
+    },
+    {
+      "id": "ASSET-01",
+      "group": "static",
+      "title": "Frontend index references exist",
+      "status": "PASS",
+      "detail": {
+        "references": 1,
+        "missing": []
+      },
+      "severity": "",
+      "elapsed_ms": 0.75,
+      "warnings": []
+    },
+    {
+      "id": "ASSET-02",
+      "group": "static",
+      "title": "Frontend control and camera routes",
+      "status": "PASS",
+      "detail": {
+        "video_port": 5000,
+        "control_port": 8888,
+        "home_button": true,
+        "meaning": "video HTTP and command WebSocket are separate"
+      },
+      "severity": "",
+      "elapsed_ms": 0.64,
+      "warnings": []
+    },
+    {
+      "id": "INFO-01",
+      "group": "static",
+      "title": "Optional GPU helper missing os import",
+      "status": "DEFECT",
+      "detail": {
+        "error": "NameError: name 'os' is not defined",
+        "note": "unused by normal get_info command; optional helper only"
+      },
+      "severity": "low",
+      "elapsed_ms": 0.79,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR--10--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": -10,
+        "direction": -1,
+        "throttle": -0.0,
+        "duty_channels_15_14": [
+          65535,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 10.78,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR--10-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": -10,
+        "direction": 1,
+        "throttle": 0.0,
+        "duty_channels_15_14": [
+          65535,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.09,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-0--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 0,
+        "direction": -1,
+        "throttle": 0,
+        "duty_channels_15_14": [
+          65535,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 5.67,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-0-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 0,
+        "direction": 1,
+        "throttle": 0,
+        "duty_channels_15_14": [
+          65535,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 5.94,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-1--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 1,
+        "direction": -1,
+        "throttle": -0.01,
+        "duty_channels_15_14": [
+          64880,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.03,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-1-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 1,
+        "direction": 1,
+        "throttle": 0.01,
+        "duty_channels_15_14": [
+          65535,
+          64880
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.31,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-20--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 20,
+        "direction": -1,
+        "throttle": -0.2,
+        "duty_channels_15_14": [
+          52416,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.17,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-20-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 20,
+        "direction": 1,
+        "throttle": 0.2,
+        "duty_channels_15_14": [
+          65535,
+          52416
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.54,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-50--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 50,
+        "direction": -1,
+        "throttle": -0.5,
+        "duty_channels_15_14": [
+          32768,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.33,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-50-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 50,
+        "direction": 1,
+        "throttle": 0.5,
+        "duty_channels_15_14": [
+          65535,
+          32768
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 10.98,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-100--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 100,
+        "direction": -1,
+        "throttle": -1.0,
+        "duty_channels_15_14": [
+          0,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.2,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-100-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 100,
+        "direction": 1,
+        "throttle": 1.0,
+        "duty_channels_15_14": [
+          65535,
+          0
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.09,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-110--1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 110,
+        "direction": -1,
+        "throttle": -1.0,
+        "duty_channels_15_14": [
+          0,
+          65535
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 10.88,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-110-1",
+      "group": "motor",
+      "title": "Speed clamp and direction",
+      "status": "PASS",
+      "detail": {
+        "speed": 110,
+        "direction": 1,
+        "throttle": 1.0,
+        "duty_channels_15_14": [
+          65535,
+          0
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.09,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-STOP",
+      "group": "motor",
+      "title": "Stop all four driver outputs",
+      "status": "PASS",
+      "detail": {
+        "throttle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "note": "driver braking PWM state; physical stopping not measured"
+      },
+      "severity": "",
+      "elapsed_ms": 28.42,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-ROUTE",
+      "group": "motor",
+      "title": "Normal driving motor port behavior",
+      "status": "PASS",
+      "detail": {
+        "normal_move_m1": 0.5,
+        "normal_move_m2": null,
+        "note": "normal driving uses M1 only; correctness depends on actual wiring"
+      },
+      "severity": "",
+      "elapsed_ms": 10.88,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-VIDEO",
+      "group": "motor",
+      "title": "Video tracking drives M1 and M2",
+      "status": "PASS",
+      "detail": {
+        "video_tracking_throttle": [
+          0.45,
+          -0.45
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 16.98,
+      "warnings": []
+    },
+    {
+      "id": "MOTOR-DIR",
+      "group": "motor",
+      "title": "Invalid direction retains previous drive",
+      "status": "DEFECT",
+      "detail": {
+        "invalid_direction": 0,
+        "retained_throttle": 0.5,
+        "note": "internal API robustness; normal UI sends +1/-1"
+      },
+      "severity": "medium",
+      "elapsed_ms": 11.64,
+      "warnings": []
+    },
+    {
+      "id": "SERVO--1000",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": -1000,
+        "clamped_absolute": 0
+      },
+      "severity": "",
+      "elapsed_ms": 11.46,
+      "warnings": []
+    },
+    {
+      "id": "SERVO--90",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": -90,
+        "clamped_absolute": 0
+      },
+      "severity": "",
+      "elapsed_ms": 11.01,
+      "warnings": []
+    },
+    {
+      "id": "SERVO--30",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": -30,
+        "clamped_absolute": 60
+      },
+      "severity": "",
+      "elapsed_ms": 11.2,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-0",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": 0,
+        "clamped_absolute": 90
+      },
+      "severity": "",
+      "elapsed_ms": 11.29,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-30",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": 30,
+        "clamped_absolute": 120
+      },
+      "severity": "",
+      "elapsed_ms": 11.31,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-90",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": 90,
+        "clamped_absolute": 180
+      },
+      "severity": "",
+      "elapsed_ms": 11.23,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-1000",
+      "group": "servo",
+      "title": "Steering angle clamp",
+      "status": "PASS",
+      "detail": {
+        "relative_angle": 1000,
+        "clamped_absolute": 180
+      },
+      "severity": "",
+      "elapsed_ms": 11.37,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-HOME",
+      "group": "servo",
+      "title": "HOME passes angle as channel index",
+      "status": "DEFECT",
+      "detail": {
+        "error": "IndexError: list index out of range",
+        "passed_servo_ids": [
+          90
+        ],
+        "valid_servo_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "source": "web/WebServer.py:255-258"
+      },
+      "severity": "high",
+      "elapsed_ms": 15.96,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-AUTO",
+      "group": "servo",
+      "title": "Auto interpolation negative sleep",
+      "status": "DEFECT",
+      "detail": {
+        "error": "ValueError: sleep length must be non-negative",
+        "sleep_seconds": -0.02333333333333333,
+        "note": "default auto interpolation only; not ordinary left/right"
+      },
+      "severity": "medium",
+      "elapsed_ms": 48.4,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-CAL",
+      "group": "servo",
+      "title": "Fine tuning lacks angle bound",
+      "status": "DEFECT",
+      "detail": {
+        "error": "ValueError: Angle out of range",
+        "init_pwm0": 181,
+        "trigger": "91 right fine-tune clicks from 90"
+      },
+      "severity": "medium",
+      "elapsed_ms": 537.26,
+      "warnings": [],
+      "stdout": "......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n......................pause..........................\n"
+    },
+    {
+      "id": "SERVO-MAP",
+      "group": "servo",
+      "title": "Initialization and steering channel mismatch",
+      "status": "OBSERVATION",
+      "detail": {
+        "steering_command_channel": 0,
+        "servoPosInit_steering_mapping": 2,
+        "result_init_positions": [
+          77,
+          90,
+          90
+        ],
+        "note": "mixed channel mappings in initialization; verify physical wiring"
+      },
+      "severity": "medium",
+      "elapsed_ms": 31.15,
+      "warnings": []
+    },
+    {
+      "id": "SERVO-BUS",
+      "group": "servo",
+      "title": "Every servo update reinitializes shared PWM chip",
+      "status": "OBSERVATION",
+      "detail": {
+        "servo_updates": 3,
+        "mode1_zero_writes": 6,
+        "shared_address": "0x5f",
+        "note": "register writes observed; electrical jitter and thread races not modeled"
+      },
+      "severity": "medium",
+      "elapsed_ms": 22.27,
+      "warnings": []
+    },
+    {
+      "id": "CMD-forward",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "forward",
+        "motor1": 1.0,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 21.58,
+      "warnings": []
+    },
+    {
+      "id": "CMD-backward",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "backward",
+        "motor1": -1.0,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 27.43,
+      "warnings": []
+    },
+    {
+      "id": "CMD-left",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "left",
+        "motor1": null,
+        "steering": 120,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 24.62,
+      "warnings": []
+    },
+    {
+      "id": "CMD-right",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "right",
+        "motor1": null,
+        "steering": 60,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 21.75,
+      "warnings": []
+    },
+    {
+      "id": "CMD-DS",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "DS",
+        "motor1": 0,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 15.74,
+      "warnings": []
+    },
+    {
+      "id": "CMD-TS",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "TS",
+        "motor1": 0,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 18.83,
+      "warnings": []
+    },
+    {
+      "id": "CMD-lookleft",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "lookleft",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 1,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 16.52,
+      "warnings": [],
+      "stdout": "resume\n"
+    },
+    {
+      "id": "CMD-lookright",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "lookright",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 1,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 19.61,
+      "warnings": [],
+      "stdout": "resume\n"
+    },
+    {
+      "id": "CMD-LRstop",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "LRstop",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 20.05,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CMD-up",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "up",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 2
+      },
+      "severity": "",
+      "elapsed_ms": 13.93,
+      "warnings": [],
+      "stdout": "resume\n"
+    },
+    {
+      "id": "CMD-down",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "down",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 2
+      },
+      "severity": "",
+      "elapsed_ms": 12.15,
+      "warnings": [],
+      "stdout": "resume\n"
+    },
+    {
+      "id": "CMD-UDstop",
+      "group": "command",
+      "title": "Normal UI command replay",
+      "status": "PASS",
+      "detail": {
+        "command": "UDstop",
+        "motor1": null,
+        "steering": 90,
+        "pan_wiggle": 0,
+        "tilt_wiggle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 12.72,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CMD-RELEASE",
+      "group": "command",
+      "title": "Steering release stops forward drive",
+      "status": "OBSERVATION",
+      "detail": {
+        "sequence": [
+          "forward",
+          "left",
+          "TS"
+        ],
+        "motor1": 0,
+        "logical_direction": "forward",
+        "meaning": "releasing steering also stops motor while forward state remains"
+      },
+      "severity": "medium",
+      "elapsed_ms": 30.1,
+      "warnings": []
+    },
+    {
+      "id": "MODE-scan",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "scan",
+        "peripheral_calls": [
+          [
+            "radarScan"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 23.93,
+      "warnings": []
+    },
+    {
+      "id": "MODE-findColor",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "findColor",
+        "peripheral_calls": [
+          [
+            "modeselect",
+            "findColor"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 18.7,
+      "warnings": []
+    },
+    {
+      "id": "MODE-motionGet",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "motionGet",
+        "peripheral_calls": [
+          [
+            "modeselect",
+            "watchDog"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 15.5,
+      "warnings": []
+    },
+    {
+      "id": "MODE-stopCV",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "stopCV",
+        "peripheral_calls": [
+          [
+            "modeselect",
+            "none"
+          ],
+          [
+            "switch",
+            1,
+            0
+          ],
+          [
+            "switch",
+            2,
+            0
+          ],
+          [
+            "switch",
+            3,
+            0
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 30.87,
+      "warnings": []
+    },
+    {
+      "id": "MODE-KD",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "KD",
+        "peripheral_calls": [
+          [
+            "keepDistance"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 33.52,
+      "warnings": []
+    },
+    {
+      "id": "MODE-automatic",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "automatic",
+        "peripheral_calls": [
+          [
+            "automatic"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 43.46,
+      "warnings": []
+    },
+    {
+      "id": "MODE-automaticOff",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "automaticOff",
+        "peripheral_calls": [
+          [
+            "pause"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 27.14,
+      "warnings": []
+    },
+    {
+      "id": "MODE-trackLine",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "trackLine",
+        "peripheral_calls": [
+          [
+            "trackLine"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 33.93,
+      "warnings": []
+    },
+    {
+      "id": "MODE-trackLineOff",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "trackLineOff",
+        "peripheral_calls": [
+          [
+            "pause"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 21.48,
+      "warnings": []
+    },
+    {
+      "id": "MODE-police",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "police",
+        "peripheral_calls": [
+          [
+            "police"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 14.39,
+      "warnings": []
+    },
+    {
+      "id": "MODE-policeOff",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "policeOff",
+        "peripheral_calls": [
+          [
+            "breath",
+            70,
+            70,
+            255
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 16.58,
+      "warnings": []
+    },
+    {
+      "id": "MODE-speech",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "speech",
+        "peripheral_calls": [
+          [
+            "speech"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 14.43,
+      "warnings": []
+    },
+    {
+      "id": "MODE-speechOff",
+      "group": "command",
+      "title": "Feature command dispatch",
+      "status": "PASS",
+      "detail": {
+        "command": "speechOff",
+        "peripheral_calls": [
+          [
+            "pause"
+          ]
+        ],
+        "note": "dispatch only; real algorithm tested separately"
+      },
+      "severity": "",
+      "elapsed_ms": 13.14,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-1-on",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            1,
+            1
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 14.5,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-1-off",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            1,
+            0
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 13.23,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-2-on",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            2,
+            1
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 12.99,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-2-off",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            2,
+            0
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 14.07,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-3-on",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            3,
+            1
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 13.87,
+      "warnings": []
+    },
+    {
+      "id": "SWITCH-3-off",
+      "group": "command",
+      "title": "Switch dispatch",
+      "status": "PASS",
+      "detail": {
+        "calls": [
+          [
+            "switch",
+            3,
+            0
+          ]
+        ]
+      },
+      "severity": "",
+      "elapsed_ms": 11.66,
+      "warnings": []
+    },
+    {
+      "id": "AUTH-VALID",
+      "group": "protocol",
+      "title": "Valid vendor credentials",
+      "status": "PASS",
+      "detail": {
+        "authenticated": true
+      },
+      "severity": "",
+      "elapsed_ms": 14.11,
+      "warnings": []
+    },
+    {
+      "id": "AUTH-MALFORMED",
+      "group": "protocol",
+      "title": "Malformed credentials crash handler",
+      "status": "DEFECT",
+      "detail": {
+        "error": "IndexError: list index out of range",
+        "input": "admin (no colon)"
+      },
+      "severity": "medium",
+      "elapsed_ms": 13.56,
+      "warnings": []
+    },
+    {
+      "id": "INPUT-SiLeft_x",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "SiLeft x",
+        "error": "ValueError: invalid literal for int() with base 10: 'x'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 20.03,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "INPUT-SiRight_",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "SiRight ",
+        "error": "ValueError: invalid literal for int() with base 10: ''"
+      },
+      "severity": "medium",
+      "elapsed_ms": 21.03,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "INPUT-PWMMS_NaN",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "PWMMS NaN",
+        "error": "ValueError: invalid literal for int() with base 10: 'NaN'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 23.53,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "INPUT-CVFLL1_x",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "CVFLL1 x",
+        "error": "ValueError: invalid literal for int() with base 10: 'x'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 36.0,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "INPUT-CVFLColorSet_NaN",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "CVFLColorSet NaN",
+        "error": "ValueError: invalid literal for int() with base 10: 'NaN'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 41.85,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "INPUT-CVFLSP",
+      "group": "protocol",
+      "title": "Malformed numeric command",
+      "status": "DEFECT",
+      "detail": {
+        "input": "CVFLSP",
+        "error": "IndexError: list index out of range"
+      },
+      "severity": "medium",
+      "elapsed_ms": 22.33,
+      "warnings": [],
+      "stdout": "not A JSON\n"
+    },
+    {
+      "id": "JSON-76",
+      "group": "protocol",
+      "title": "Malformed JSON object",
+      "status": "DEFECT",
+      "detail": {
+        "input": {
+          "data": [
+            1
+          ]
+        },
+        "error": "KeyError: 'title'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 20.28,
+      "warnings": []
+    },
+    {
+      "id": "JSON-77",
+      "group": "protocol",
+      "title": "Malformed JSON object",
+      "status": "DEFECT",
+      "detail": {
+        "input": {
+          "title": "findColorSet"
+        },
+        "error": "KeyError: 'data'"
+      },
+      "severity": "medium",
+      "elapsed_ms": 33.98,
+      "warnings": []
+    },
+    {
+      "id": "JSON-78",
+      "group": "protocol",
+      "title": "Malformed JSON object",
+      "status": "DEFECT",
+      "detail": {
+        "input": {
+          "title": "findColorSet",
+          "data": [
+            1
+          ]
+        },
+        "error": "IndexError: list index out of range"
+      },
+      "severity": "medium",
+      "elapsed_ms": 26.12,
+      "warnings": []
+    },
+    {
+      "id": "INPUT-ACK",
+      "group": "protocol",
+      "title": "Unknown command acknowledged OK",
+      "status": "OBSERVATION",
+      "detail": {
+        "unknown_command_response": {
+          "status": "ok",
+          "title": "",
+          "data": null
+        },
+        "meaning": "ack is not proof of action"
+      },
+      "severity": "low",
+      "elapsed_ms": 24.53,
+      "warnings": [],
+      "stdout": "not A JSON\nunknown-command\n"
+    },
+    {
+      "id": "INPUT-SPEED",
+      "group": "protocol",
+      "title": "Excessive speed clamped by motor layer",
+      "status": "PASS",
+      "detail": {
+        "stored_speed": 99999,
+        "actual_driver_throttle": 1.0,
+        "note": "server lacks bound but move.Motor clamps output"
+      },
+      "severity": "",
+      "elapsed_ms": 29.17,
+      "warnings": [],
+      "stdout": "not A JSON\nwsB 99999\nnot A JSON\nforward\n"
+    },
+    {
+      "id": "I2C-FAIL",
+      "group": "protocol",
+      "title": "I2C unavailable at command startup",
+      "status": "OBSERVATION",
+      "detail": {
+        "error": "ValueError: No I2C device at address: 0x5f",
+        "meaning": "I2C failure propagates; no structured response"
+      },
+      "severity": "high",
+      "elapsed_ms": 25.96,
+      "warnings": []
+    },
+    {
+      "id": "INPUT-FUZZ",
+      "group": "protocol",
+      "title": "Deterministic malformed-input campaign",
+      "status": "DEFECT",
+      "detail": {
+        "cases": 64,
+        "unhandled": 22,
+        "types": {
+          "IndexError": 5,
+          "ValueError": 17
+        },
+        "examples": [
+          {
+            "input": {
+              "title": "findColorSet",
+              "data": []
+            },
+            "error": "list index out of range"
+          },
+          {
+            "input": "SiLeft ",
+            "error": "invalid literal for int() with base 10: ''"
+          },
+          {
+            "input": "SiLeft x",
+            "error": "invalid literal for int() with base 10: 'x'"
+          },
+          {
+            "input": "SiLeft 0.5",
+            "error": "invalid literal for int() with base 10: '0.5'"
+          },
+          {
+            "input": "SiRight ",
+            "error": "invalid literal for int() with base 10: ''"
+          },
+          {
+            "input": "SiRight x",
+            "error": "invalid literal for int() with base 10: 'x'"
+          },
+          {
+            "input": "SiRight 0.5",
+            "error": "invalid literal for int() with base 10: '0.5'"
+          },
+          {
+            "input": "PWMMS ",
+            "error": "invalid literal for int() with base 10: ''"
+          },
+          {
+            "input": "PWMMS x",
+            "error": "invalid literal for int() with base 10: 'x'"
+          },
+          {
+            "input": "PWMMS 0.5",
+            "error": "invalid literal for int() with base 10: '0.5'"
+          },
+          {
+            "input": "CVFLL1 ",
+            "error": "list index out of range"
+          },
+          {
+            "input": "CVFLL1 x",
+            "error": "invalid literal for int() with base 10: 'x'"
+          }
+        ]
+      },
+      "severity": "medium",
+      "elapsed_ms": 1612.46,
+      "warnings": [],
+      "stdout": "not A JSON\nadmin\nnot A JSON\nnot A JSON\n:\nnot A JSON\nadmin:\nnot A JSON\nnot A JSON\nnot A JSON\nSiLeft -1\nnot A JSON\nSiLeft 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nSiRight -1\nnot A JSON\nSiRight 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nPWMMS -1\nnot A JSON\nPWMMS 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nCVFLL1 -1\nnot A JSON\nCVFLL1 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nCVFLL2 -1\nnot A JSON\nCVFLL2 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nCVFLSP -1\nnot A JSON\nCVFLSP 999\nnot A JSON\nnot A JSON\nnot A JSON\nnot A JSON\nCVFLColorSet -1\nnot A JSON\nCVFLColorSet 999\nnot A JSON\n32321\nnot A JSON\n3:22\nnot A JSON\nB \n33\nnot A JSON\nC1332111A23AB2:B\nnot A JSON\nC 2 :\nnot A JSON\n1A: BCCAC2AA:\nnot A JSON\nA:A33 B:AB2C\nnot A JSON\nA2 1C ::1:113 :\nnot A JSON\n:1:1:3C3 B :CA\nnot A JSON\n:B\nnot A JSON\n22321C:1\nnot A JSON\nA33332:\nnot A JSON\n A3\nnot A JSON\n3 BA1B1A B3\n3\nnot A JSON\n  1: 1\nnot A JSON\nCB 2213B321:2:C3C:1\nnot A JSON\n2C:A\nnot A JSON\n1:2 AA\n"
+    },
+    {
+      "id": "LINE-000",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "000",
+        "steering": 90,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 35.74,
+      "warnings": [],
+      "stdout": "0 0 0\n"
+    },
+    {
+      "id": "LINE-001",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "001",
+        "steering": 52,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 36.83,
+      "warnings": [],
+      "stdout": "0 0 1\n"
+    },
+    {
+      "id": "LINE-010",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "010",
+        "steering": 90,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 35.44,
+      "warnings": [],
+      "stdout": "0 1 0\n"
+    },
+    {
+      "id": "LINE-011",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "011",
+        "steering": 52,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 37.67,
+      "warnings": [],
+      "stdout": "0 1 1\n"
+    },
+    {
+      "id": "LINE-100",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "100",
+        "steering": 128,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 38.49,
+      "warnings": [],
+      "stdout": "1 0 0\n"
+    },
+    {
+      "id": "LINE-101",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "101",
+        "steering": 90,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 39.02,
+      "warnings": [],
+      "stdout": "1 0 1\n"
+    },
+    {
+      "id": "LINE-110",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "110",
+        "steering": 128,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 41.27,
+      "warnings": [],
+      "stdout": "1 1 0\n"
+    },
+    {
+      "id": "LINE-111",
+      "group": "algorithm",
+      "title": "Line sensor truth table",
+      "status": "PASS",
+      "detail": {
+        "sensor_bits": "111",
+        "steering": 90,
+        "motor1": 0.28,
+        "note": "vendor truth table replay; real sensor polarity and line quality not verified"
+      },
+      "severity": "",
+      "elapsed_ms": 36.68,
+      "warnings": [],
+      "stdout": "1 1 1\n"
+    },
+    {
+      "id": "LINE-INITIAL",
+      "group": "algorithm",
+      "title": "Initial 000 sensor sample skipped",
+      "status": "DEFECT",
+      "detail": {
+        "initial_last_status": 0,
+        "sensor_bits": "000",
+        "motor1": null,
+        "meaning": "initial identical sample skipped; mode can appear inactive"
+      },
+      "severity": "medium",
+      "elapsed_ms": 23.24,
+      "warnings": []
+    },
+    {
+      "id": "DIST-20",
+      "group": "algorithm",
+      "title": "Keep-distance boundaries",
+      "status": "PASS",
+      "detail": {
+        "distance_cm": 20,
+        "motor1": -0.4
+      },
+      "severity": "",
+      "elapsed_ms": 30.59,
+      "warnings": [],
+      "stdout": "keepDistanceProcessing: 20\n"
+    },
+    {
+      "id": "DIST-30",
+      "group": "algorithm",
+      "title": "Keep-distance boundaries",
+      "status": "PASS",
+      "detail": {
+        "distance_cm": 30,
+        "motor1": 0
+      },
+      "severity": "",
+      "elapsed_ms": 23.3,
+      "warnings": [],
+      "stdout": "keepDistanceProcessing: 30\n"
+    },
+    {
+      "id": "DIST-35",
+      "group": "algorithm",
+      "title": "Keep-distance boundaries",
+      "status": "PASS",
+      "detail": {
+        "distance_cm": 35,
+        "motor1": 0
+      },
+      "severity": "",
+      "elapsed_ms": 21.05,
+      "warnings": [],
+      "stdout": "keepDistanceProcessing: 35\n"
+    },
+    {
+      "id": "DIST-40",
+      "group": "algorithm",
+      "title": "Keep-distance boundaries",
+      "status": "PASS",
+      "detail": {
+        "distance_cm": 40,
+        "motor1": 0
+      },
+      "severity": "",
+      "elapsed_ms": 19.54,
+      "warnings": [],
+      "stdout": "keepDistanceProcessing: 40\n"
+    },
+    {
+      "id": "DIST-50",
+      "group": "algorithm",
+      "title": "Keep-distance boundaries",
+      "status": "PASS",
+      "detail": {
+        "distance_cm": 50,
+        "motor1": 0.4
+      },
+      "severity": "",
+      "elapsed_ms": 28.23,
+      "warnings": [],
+      "stdout": "keepDistanceProcessing: 50\n"
+    },
+    {
+      "id": "AUTO-100-None",
+      "group": "algorithm",
+      "title": "Obstacle avoidance branches",
+      "status": "PASS",
+      "detail": {
+        "front_cm": 100,
+        "free_side": null,
+        "motor1": 0.5,
+        "steering": 90,
+        "note": "branch replay only; no real obstacle or vehicle physics"
+      },
+      "severity": "",
+      "elapsed_ms": 35.34,
+      "warnings": [],
+      "stdout": "automaticProcessing\n100 cm\nForward\n"
+    },
+    {
+      "id": "AUTO-20-None",
+      "group": "algorithm",
+      "title": "Obstacle avoidance branches",
+      "status": "PASS",
+      "detail": {
+        "front_cm": 20,
+        "free_side": null,
+        "motor1": -0.5,
+        "steering": 90,
+        "note": "branch replay only; no real obstacle or vehicle physics"
+      },
+      "severity": "",
+      "elapsed_ms": 41.4,
+      "warnings": [],
+      "stdout": "automaticProcessing\n20 cm\nBack\n"
+    },
+    {
+      "id": "AUTO-50-left",
+      "group": "algorithm",
+      "title": "Obstacle avoidance branches",
+      "status": "PASS",
+      "detail": {
+        "front_cm": 50,
+        "free_side": "left",
+        "motor1": 0.5,
+        "steering": 130,
+        "note": "branch replay only; no real obstacle or vehicle physics"
+      },
+      "severity": "",
+      "elapsed_ms": 55.39,
+      "warnings": [],
+      "stdout": "automaticProcessing\n50 cm\n[80, 20, 0]\nLeft\n"
+    },
+    {
+      "id": "AUTO-50-right",
+      "group": "algorithm",
+      "title": "Obstacle avoidance branches",
+      "status": "PASS",
+      "detail": {
+        "front_cm": 50,
+        "free_side": "right",
+        "motor1": 0.5,
+        "steering": 50,
+        "note": "branch replay only; no real obstacle or vehicle physics"
+      },
+      "severity": "",
+      "elapsed_ms": 48.54,
+      "warnings": [],
+      "stdout": "automaticProcessing\n50 cm\n[20, 80, 0]\nRight\n"
+    },
+    {
+      "id": "DIST-200",
+      "group": "algorithm",
+      "title": "Exact 200 cm sample loops without exit",
+      "status": "DEFECT",
+      "detail": {
+        "distance_cm": 200,
+        "reads_before_abort": 10001,
+        "error": "StopReplay: 10000 reads exceeded",
+        "reason": "conditions use >200 or <200, equality has no exit",
+        "note": "physical occurrence of exact 200 is unverified; configured sensor max is 2m"
+      },
+      "severity": "high",
+      "elapsed_ms": 25.47,
+      "warnings": []
+    },
+    {
+      "id": "LIGHT-80",
+      "group": "algorithm",
+      "title": "Light tracking branches",
+      "status": "PASS",
+      "detail": {
+        "adc": 80,
+        "steering": 130,
+        "motor1": 0.5
+      },
+      "severity": "",
+      "elapsed_ms": 31.34,
+      "warnings": [],
+      "stdout": "Light Tracking Value: 80\n"
+    },
+    {
+      "id": "LIGHT-127",
+      "group": "algorithm",
+      "title": "Light tracking branches",
+      "status": "PASS",
+      "detail": {
+        "adc": 127,
+        "steering": 90,
+        "motor1": 0.3
+      },
+      "severity": "",
+      "elapsed_ms": 28.78,
+      "warnings": [],
+      "stdout": "Light Tracking Value: 127\n"
+    },
+    {
+      "id": "LIGHT-180",
+      "group": "algorithm",
+      "title": "Light tracking branches",
+      "status": "PASS",
+      "detail": {
+        "adc": 180,
+        "steering": 50,
+        "motor1": 0.5
+      },
+      "severity": "",
+      "elapsed_ms": 41.19,
+      "warnings": [],
+      "stdout": "Light Tracking Value: 180\n"
+    },
+    {
+      "id": "CV-LINE-100",
+      "group": "vision",
+      "title": "Synthetic white-line frame",
+      "status": "PASS",
+      "detail": {
+        "white_line_x": 100,
+        "detected_center": 99,
+        "motor1": 0.45,
+        "numpy": "2.5.4",
+        "note": "synthetic high-contrast image; no optics/lighting model"
+      },
+      "severity": "high",
+      "elapsed_ms": 113.7,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-LINE-320",
+      "group": "vision",
+      "title": "Synthetic white-line frame",
+      "status": "PASS",
+      "detail": {
+        "white_line_x": 320,
+        "detected_center": 319,
+        "motor1": 0.45,
+        "numpy": "2.5.4",
+        "note": "synthetic high-contrast image; no optics/lighting model"
+      },
+      "severity": "high",
+      "elapsed_ms": 106.62,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-LINE-540",
+      "group": "vision",
+      "title": "Synthetic white-line frame",
+      "status": "PASS",
+      "detail": {
+        "white_line_x": 540,
+        "detected_center": 539,
+        "motor1": 0.45,
+        "numpy": "2.5.4",
+        "note": "synthetic high-contrast image; no optics/lighting model"
+      },
+      "severity": "high",
+      "elapsed_ms": 106.46,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-BLANK",
+      "group": "vision",
+      "title": "No-line image stops with no previous direction",
+      "status": "PASS",
+      "detail": {
+        "center": null,
+        "motor1": 0
+      },
+      "severity": "",
+      "elapsed_ms": 87.37,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-ROW",
+      "group": "vision",
+      "title": "Out-of-frame scan row unhandled",
+      "status": "DEFECT",
+      "detail": {
+        "row": 999,
+        "frame_height": 480,
+        "error": "IndexError: index 999 is out of bounds for axis 0 with size 480"
+      },
+      "severity": "medium",
+      "elapsed_ms": 70.78,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-COLOR",
+      "group": "vision",
+      "title": "Synthetic yellow object detection",
+      "status": "PASS",
+      "detail": {
+        "yellow_target": [
+          450,
+          200
+        ],
+        "detected_center": [
+          450.0,
+          200.0
+        ],
+        "radius": 40.0
+      },
+      "severity": "",
+      "elapsed_ms": 83.54,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-NOCOLOR",
+      "group": "vision",
+      "title": "Blank image has no yellow object",
+      "status": "PASS",
+      "detail": {
+        "detected": 0
+      },
+      "severity": "",
+      "elapsed_ms": 72.68,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "CV-MAP",
+      "group": "vision",
+      "title": "Optional linear-map formula wrong",
+      "status": "DEFECT",
+      "detail": {
+        "input": 150,
+        "range": [
+          100,
+          200
+        ],
+        "output_range": [
+          0,
+          10
+        ],
+        "actual": 2.5,
+        "expected": 5,
+        "note": "helper not used by ordinary manual drive"
+      },
+      "severity": "low",
+      "elapsed_ms": 66.16,
+      "warnings": [],
+      "stdout": "......................pause..........................\n"
+    },
+    {
+      "id": "HTTP-113",
+      "group": "http",
+      "title": "Flask original route response",
+      "status": "PASS",
+      "detail": {
+        "path": "/",
+        "http": 200,
+        "bytes": 1498
+      },
+      "severity": "",
+      "elapsed_ms": 31.27,
+      "warnings": [
+        "unclosed file <_io.BufferedReader name='C:\\\\Users\\\\happy\\\\OneDrive\\\\바탕 화면\\\\새 폴더\\\\output\\\\picar_validation\\\\source\\\\web/dist/index.html'>"
+      ]
+    },
+    {
+      "id": "HTTP-114",
+      "group": "http",
+      "title": "Flask original route response",
+      "status": "PASS",
+      "detail": {
+        "path": "/js/app.64643da8.js",
+        "http": 200,
+        "bytes": 32944
+      },
+      "severity": "",
+      "elapsed_ms": 0.91,
+      "warnings": [
+        "unclosed file <_io.BufferedReader name='C:\\\\Users\\\\happy\\\\OneDrive\\\\바탕 화면\\\\새 폴더\\\\output\\\\picar_validation\\\\source\\\\web/dist/js/app.64643da8.js'>"
+      ]
+    },
+    {
+      "id": "HTTP-115",
+      "group": "http",
+      "title": "Flask original route response",
+      "status": "PASS",
+      "detail": {
+        "path": "/css/app.b86bc1aa.css",
+        "http": 200,
+        "bytes": 9940
+      },
+      "severity": "",
+      "elapsed_ms": 0.6,
+      "warnings": [
+        "unclosed file <_io.BufferedReader name='C:\\\\Users\\\\happy\\\\OneDrive\\\\바탕 화면\\\\새 폴더\\\\output\\\\picar_validation\\\\source\\\\web/dist/css/app.b86bc1aa.css'>"
+      ]
+    },
+    {
+      "id": "HTTP-116",
+      "group": "http",
+      "title": "Flask original route response",
+      "status": "PASS",
+      "detail": {
+        "path": "/does-not-exist.txt",
+        "http": 404,
+        "bytes": 207
+      },
+      "severity": "",
+      "elapsed_ms": 0.45,
+      "warnings": []
+    },
+    {
+      "id": "HTTP-MJPEG",
+      "group": "http",
+      "title": "MJPEG stream with simulated camera",
+      "status": "PASS",
+      "detail": {
+        "http": 200,
+        "first_chunk_bytes": 5466,
+        "mime": "multipart/x-mixed-replace; boundary=frame",
+        "note": "synthetic JPEG; camera driver replaced"
+      },
+      "severity": "",
+      "elapsed_ms": 1.17,
+      "warnings": []
+    },
+    {
+      "id": "WS-ROUNDTRIP",
+      "group": "network",
+      "title": "Real WebSocket auth and command exchange",
+      "status": "PASS",
+      "detail": {
+        "library": "13.0",
+        "python": "3.13.5",
+        "transport": "real loopback WebSocket",
+        "commands": 4,
+        "final_throttle": 0
+      },
+      "severity": "",
+      "elapsed_ms": 65.65,
+      "warnings": [
+        "remove second argument of ws_handler"
+      ],
+      "stdout": "not A JSON\nwsB 20\nnot A JSON\nforward\nnot A JSON\nleft\nnot A JSON\nDS\n"
+    },
+    {
+      "id": "WS-DISCONNECT",
+      "group": "network",
+      "title": "Closing client leaves last motor command active",
+      "status": "DEFECT",
+      "detail": {
+        "closed_client": true,
+        "throttle_after_close": 0.2,
+        "meaning": "no disconnect cleanup or command timeout observed; no physical motion measured"
+      },
+      "severity": "high",
+      "elapsed_ms": 124.11,
+      "warnings": [
+        "remove second argument of ws_handler"
+      ],
+      "stdout": "not A JSON\nwsB 20\nnot A JSON\nforward\n"
+    },
+    {
+      "id": "WS-PERIPHERAL",
+      "group": "network",
+      "title": "Peripheral exception after drive retains motor output",
+      "status": "DEFECT",
+      "detail": {
+        "error": "RuntimeError: SIMULATED LED fault",
+        "retained_throttle": 1.0,
+        "meaning": "actuator write precedes peripheral error; handler has no stop finally"
+      },
+      "severity": "high",
+      "elapsed_ms": 39.99,
+      "warnings": []
+    },
+    {
+      "id": "WS-MULTI",
+      "group": "network",
+      "title": "Second client changes shared motor state",
+      "status": "OBSERVATION",
+      "detail": {
+        "client_A_forward": 1.0,
+        "client_B_stop": 0,
+        "meaning": "shared global controller; no exclusive ownership"
+      },
+      "severity": "medium",
+      "elapsed_ms": 41.31,
+      "warnings": [
+        "remove second argument of ws_handler"
+      ],
+      "stdout": "not A JSON\nforward\nnot A JSON\nDS\n"
+    },
+    {
+      "id": "SETUP-FAIL",
+      "group": "install",
+      "title": "Installation failure does not gate success message/reboot",
+      "status": "DEFECT",
+      "detail": {
+        "simulated_failed_apt_calls": 27,
+        "recorded_only": true,
+        "commands_actually_run": 0,
+        "final_success_print_is_unconditional": true,
+        "reboot_is_unconditional": true,
+        "meaning": "reboot cannot establish installation success"
+      },
+      "severity": "high",
+      "elapsed_ms": 1.55,
+      "warnings": []
+    },
+    {
+      "id": "SETUP-RETRY",
+      "group": "install",
+      "title": "Retry success does not reset failure marker",
+      "status": "DEFECT",
+      "detail": {
+        "one_initial_failure_then_success": true,
+        "calls": 27,
+        "retained_error_flag": 1,
+        "note": "retry flag not cleared between rounds"
+      },
+      "severity": "low",
+      "elapsed_ms": 1.06,
+      "warnings": []
+    },
+    {
+      "id": "VOICE-PATH",
+      "group": "install",
+      "title": "Voice runtime path/assets are external prerequisites",
+      "status": "OBSERVATION",
+      "detail": {
+        "hardcoded_home": "/home/pi",
+        "sherpa_model_or_binary_present": false,
+        "note": "voice runtime assets absent from Code tree; voice worker captures its error"
+      },
+      "severity": "medium",
+      "elapsed_ms": 1.45,
+      "warnings": []
+    },
+    {
+      "id": "SERVICE-01",
+      "group": "install",
+      "title": "Service configuration review",
+      "status": "PASS",
+      "detail": {
+        "service": "Adeept_Robot.service",
+        "restart_policy": "no",
+        "http_port": 5000,
+        "websocket_port": 8888,
+        "meaning": "inspect journal and both ports; service active alone is insufficient"
+      },
+      "severity": "",
+      "elapsed_ms": 0.12,
+      "warnings": []
+    },
+    {
+      "id": "STARTUP-LED",
+      "group": "install",
+      "title": "LED initialization exception masks original error",
+      "status": "DEFECT",
+      "detail": {
+        "error": "NameError: name 'WS2812' is not defined",
+        "meaning": "exception path references WS2812 before assignment; server startup aborted"
+      },
+      "severity": "high",
+      "elapsed_ms": 2.03,
+      "warnings": []
+    },
+    {
+      "id": "BATTERY-PCT",
+      "group": "other",
+      "title": "Battery display percentage outside 0..100",
+      "status": "DEFECT",
+      "detail": {
+        "percentages": {
+          "0": "-299",
+          "6.0": "-14",
+          "6.3": "0",
+          "7.4": "52",
+          "8.4": "100",
+          "9.0": "128"
+        },
+        "note": "display helper lacks 0..100 bounds; voltage not measured"
+      },
+      "severity": "low",
+      "elapsed_ms": 0.99,
+      "warnings": []
+    },
+    {
+      "id": "CAMERA-EVENT",
+      "group": "other",
+      "title": "CameraEvent legacy threading method",
+      "status": "PASS",
+      "detail": {
+        "legacy_isSet_present": true
+      },
+      "severity": "medium",
+      "elapsed_ms": 0.66,
+      "warnings": [
+        "isSet() is deprecated, use is_set() instead"
+      ]
+    },
+    {
+      "id": "IR-VALID",
+      "group": "other",
+      "title": "Synthetic NEC pulse integrity decoding",
+      "status": "PASS",
+      "detail": {
+        "synthetic_decoded": [
+          0,
+          24
+        ],
+        "note": "decoder fixture follows vendor bit order; no remote hardware tested"
+      },
+      "severity": "",
+      "elapsed_ms": 1.55,
+      "warnings": []
+    },
+    {
+      "id": "SETUP-FULL",
+      "group": "install",
+      "title": "Full installer sandbox: all package failures still reach reboot",
+      "status": "DEFECT",
+      "detail": {
+        "apt_commands_failed": 27,
+        "pip_commands_failed": 33,
+        "reboot_requested": true,
+        "service_files_in_memory": [
+          "/etc/systemd/system/wifi-hotspot-manager.service",
+          "/home/pi/startup.sh",
+          "/etc/systemd/system/Adeept_Robot.service"
+        ],
+        "real_os_commands_executed": 0,
+        "real_system_files_written": 0
+      },
+      "severity": "high",
+      "elapsed_ms": 1.19,
+      "warnings": [],
+      "stdout": "curpath://home/pi/adeept_picar-b2\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step apt\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nError running installation step pip\nService file created: /etc/systemd/system/wifi-hotspot-manager.service\nService wifi-hotspot-manager.service has been enabled and started\nService file created: /etc/systemd/system/Adeept_Robot.service\nService Adeept_Robot.service has been enabled and started\nThe program in Raspberry Pi has been installed, disconnected and restarted. \nYou can now power off the Raspberry Pi to install the camera and driver board (Robot HAT). \nAfter turning on again, the Raspberry Pi will automatically run the program to set the servos port signal to turn the servos to the middle position, which is convenient for mechanical assembly.\nrestarting...\n"
+    },
+    {
+      "id": "FAULT-HOME-MOVING",
+      "group": "fault",
+      "title": "HOME exception after driving retains output",
+      "status": "DEFECT",
+      "detail": {
+        "sequence": [
+          "forward",
+          "home"
+        ],
+        "error": "IndexError: list index out of range",
+        "motor_after_exception": 1.0
+      },
+      "severity": "high",
+      "elapsed_ms": 24.24,
+      "warnings": [],
+      "stdout": "not A JSON\nforward\nnot A JSON\n"
+    },
+    {
+      "id": "DIST-FAULT-201",
+      "group": "fault",
+      "title": "Invalid distance replay has no retry limit",
+      "status": "DEFECT",
+      "detail": {
+        "sample": "201",
+        "reads": 1001,
+        "error": "StopReplay: 1000-read test limit",
+        "note": "injected out-of-range sensor fault; physical occurrence not established"
+      },
+      "severity": "medium",
+      "elapsed_ms": 23.93,
+      "warnings": []
+    },
+    {
+      "id": "DIST-FAULT-nan",
+      "group": "fault",
+      "title": "Invalid distance replay has no retry limit",
+      "status": "DEFECT",
+      "detail": {
+        "sample": "nan",
+        "reads": 1001,
+        "error": "StopReplay: 1000-read test limit",
+        "note": "injected out-of-range sensor fault; physical occurrence not established"
+      },
+      "severity": "medium",
+      "elapsed_ms": 27.85,
+      "warnings": []
+    },
+    {
+      "id": "FAULT-SILENT",
+      "group": "fault",
+      "title": "Silent connection and task cancellation retain motor command",
+      "status": "DEFECT",
+      "detail": {
+        "quiet_connection_observation_ms": 80,
+        "output_before_and_after_task_cancel": [
+          1.0,
+          1.0
+        ],
+        "note": "no real timeout threshold measured; source has bare recv with no wait_for/watchdog"
+      },
+      "severity": "high",
+      "elapsed_ms": 99.09,
+      "warnings": [],
+      "stdout": "not A JSON\nforward\n"
+    },
+    {
+      "id": "INTEGRITY-SOURCE",
+      "group": "integrity",
+      "title": "Test baseline matches full ZIP copy byte for byte",
+      "status": "PASS",
+      "detail": {
+        "vendor_python_files": 35,
+        "baseline_mismatches": []
+      },
+      "severity": "",
+      "elapsed_ms": 13.1,
+      "warnings": []
+    }
+  ]
+}

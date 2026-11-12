@@ -1,0 +1,95 @@
+{
+  "generated_at_kst": "2026-10-16T22:19:55.687425+09:00",
+  "original_tests": 136,
+  "outcomes": {
+    "PASS": 98,
+    "DEFECT": 31,
+    "OBSERVATION": 7
+  },
+  "groups": {
+    "static": {
+      "PASS": 5,
+      "DEFECT": 1
+    },
+    "motor": {
+      "PASS": 17,
+      "DEFECT": 1
+    },
+    "servo": {
+      "PASS": 7,
+      "DEFECT": 3,
+      "OBSERVATION": 2
+    },
+    "command": {
+      "PASS": 31,
+      "OBSERVATION": 1
+    },
+    "protocol": {
+      "PASS": 2,
+      "DEFECT": 11,
+      "OBSERVATION": 2
+    },
+    "algorithm": {
+      "PASS": 20,
+      "DEFECT": 2
+    },
+    "vision": {
+      "PASS": 6,
+      "DEFECT": 2
+    },
+    "http": {
+      "PASS": 5
+    },
+    "network": {
+      "PASS": 1,
+      "DEFECT": 2,
+      "OBSERVATION": 1
+    },
+    "install": {
+      "DEFECT": 4,
+      "OBSERVATION": 1,
+      "PASS": 1
+    },
+    "other": {
+      "DEFECT": 1,
+      "PASS": 2
+    },
+    "fault": {
+      "DEFECT": 4
+    },
+    "integrity": {
+      "PASS": 1
+    }
+  },
+  "integrity": [
+    {
+      "path": "C:\\Users\\happy\\OneDrive\\바탕 화면\\새 폴더\\ADR012-V5.1_PiCar-B_MarsRover_SmartCarKit_for_RPi-20260407.zip",
+      "before": "f900862259242be7222ad826dfdbead8e8c306f7858aafff0483f0090fbf64fc",
+      "after": "f900862259242be7222ad826dfdbead8e8c306f7858aafff0483f0090fbf64fc",
+      "unchanged": true,
+      "size": 60487206
+    },
+    {
+      "path": "C:\\Users\\happy\\OneDrive\\바탕 화면\\새 폴더\\picar 진행사항 정리.pdf",
+      "before": "806331758ae5f4df37d12201b08e8b07b6e44c92a8d56f5cf1829a6d088971f3",
+      "after": "806331758ae5f4df37d12201b08e8b07b6e44c92a8d56f5cf1829a6d088971f3",
+      "unchanged": true,
+      "size": 102749
+    },
+    {
+      "path": "C:\\Users\\happy\\OneDrive\\바탕 화면\\새 폴더\\output\\picar_validation\\working_copy\\ADR012-V5.1_PiCar-B_MarsRover_SmartCarKit_for_RPi-20260407.zip",
+      "before": "f900862259242be7222ad826dfdbead8e8c306f7858aafff0483f0090fbf64fc",
+      "after": "f900862259242be7222ad826dfdbead8e8c306f7858aafff0483f0090fbf64fc",
+      "unchanged": true,
+      "size": 60487206
+    }
+  ],
+  "candidate_files_changed": [
+    "web/base_camera.py",
+    "web/functions.py",
+    "web/RPIservo.py",
+    "web/WebServer.py"
+  ],
+  "compatibility_probes": 15,
+  "candidate_tests": 14
+}

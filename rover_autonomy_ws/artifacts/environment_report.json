@@ -1,0 +1,19 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "ros_rclpy_available": false,
+  "picamera2_available": false,
+  "configuration_valid": true,
+  "live_output_configured": false,
+  "live_output_note": "Hardware output requires enabled=true and measured calibration",
+  "default_sign_backend": "geometry",
+  "real_sign_photo_validation": "not performed; no project dataset supplied",
+  "models": [
+    "palm_detection_mediapipe_2023feb.onnx",
+    "PALM_LICENSE.txt",
+    "palm_manifest.json"
+  ],
+  "camera_or_serial_opened": false
+}

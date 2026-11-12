@@ -1,0 +1,17 @@
+{
+  "pdf": "C:\\Users\\happy\\OneDrive\\바탕 화면\\새 폴더\\output\\pdf\\PiCar-B_오프라인검증_결과예측_대응보고서.pdf",
+  "pages": 19,
+  "sha256": "1eec88fb7f039367d89af9a0452d58e7630498747d2a2029b83f2bc1ac75ec33",
+  "original_files_unchanged": true,
+  "test_records_verified": 165,
+  "pdf_bounds_issues": [],
+  "baseline_runtime": "Windows-11-10.0.26200-SP0",
+  "compat_server_errors": [
+    [
+      "TypeError: main_logic() missing 1 required positional argument: 'path'"
+    ],
+    [
+      "TypeError: main_logic() missing 1 required positional argument: 'path'"
+    ]
+  ]
+}

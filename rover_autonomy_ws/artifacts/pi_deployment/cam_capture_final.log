@@ -1,0 +1,10 @@
+[0:21:41.029619478] [2246] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:284 [0mlibcamera v0.2.0
+[0:21:41.094815665] [2249] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:39 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+[0:21:41.097860459] [2249] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:401 [0mRegistered camera /base/soc/i2c0mux/i2c@1/ov5647@36 to Unicam device /dev/media1 and ISP device /dev/media3
+Using camera /base/soc/i2c0mux/i2c@1/ov5647@36 as cam0
+[0:21:41.098633208] [2246] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1183 [0mconfiguring streams: (0) 640x480-RGB888
+[0:21:41.099182961] [2249] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:559 [0mSensor: /base/soc/i2c0mux/i2c@1/ov5647@36 - Selected sensor format: 640x480-SGBRG10_1X10 - Selected unicam format: 640x480-pGAA
+cam0: Capture 2 frames
+[0:21:41.202514199] [2252] [1;35mFATAL [1;37mdefault [1;34mipa_base.cpp:396 [0massertion "it != buffers_.end()" failed in prepareIsp()
+Backtrace not available
+timeout: the monitored command dumped core

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "green_light",
+    "source_stem": "20260921_062735_505980",
+    "use": "local user-data regression crop"
+  },
+  {
+    "label": "red_light",
+    "source_stem": "20260921_062900_091803",
+    "use": "local user-data regression crop"
+  },
+  {
+    "label": "left",
+    "source_stem": "20260928_050640_045408",
+    "use": "local user-data regression crop"
+  },
+  {
+    "label": "right",
+    "source_stem": "20260928_050820_027747",
+    "use": "local user-data regression crop"
+  }
+]

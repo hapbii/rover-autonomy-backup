@@ -1,0 +1,122 @@
+{
+  "at": "2026-11-12T10:09:18.324457+00:00",
+  "host": "takyeji@192.168.50.34",
+  "workspace": "/home/takyeji/robot_ws",
+  "backup": {
+    "source": "/home/takyeji/robot_ws",
+    "backup": "/home/takyeji/robot_ws_backup_20261112_094404",
+    "verified": true,
+    "entries": 725,
+    "files": 432,
+    "file_bytes": 1117324,
+    "verified_at": "2026-11-12T09:44:06.481695+00:00"
+  },
+  "backup_rechecked": true,
+  "removed_paths": [
+    "build",
+    "install",
+    "log",
+    "src/robot_base",
+    "src/robot_mission",
+    "src/robot_bringup",
+    "src/encoder_motor",
+    "firmware/two_motor_test",
+    "firmware/two_motor_test_stby13",
+    "firmware/three_ir_four_encoder",
+    "firmware/robot_arduino",
+    "scripts/setup_pi.sh"
+  ],
+  "preserved": [
+    ".git",
+    "firmware/backups"
+  ],
+  "staging_removed": "/home/takyeji/.rover_stage_20261112_095215",
+  "cache_removed": [
+    ".pytest_cache",
+    "tests/__pycache__",
+    "src/rover_autonomy/rover_autonomy/__pycache__",
+    "src/rover_autonomy/rover_autonomy/ros/__pycache__",
+    "src/rover_autonomy/rover_autonomy/hardware/__pycache__",
+    "src/rover_autonomy/rover_autonomy/vision/__pycache__",
+    "src/rover_autonomy/rover_autonomy/control/__pycache__",
+    "scripts/__pycache__"
+  ],
+  "build": "passed",
+  "unit_tests": {
+    "tests": 90,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "ros_smoke_simulation": {
+    "scenario": "simulation",
+    "domain": 190,
+    "hardware_output": false,
+    "physical_camera": false,
+    "range_is_virtual": true,
+    "passed": true,
+    "commands": 26,
+    "vision_sequence": 65,
+    "max_linear": 0.1,
+    "max_angular": 0.0,
+    "reasons": [
+      "camera_line_follow",
+      "disarmed",
+      "emergency_stop"
+    ],
+    "hand_detected": false,
+    "elapsed_seconds": 8.650538665999989,
+    "launch_exit_code": 0,
+    "traceback_in_log": false
+  },
+  "ros_smoke_reference_image": {
+    "scenario": "image",
+    "domain": 190,
+    "hardware_output": false,
+    "physical_camera": false,
+    "range_is_virtual": true,
+    "passed": true,
+    "commands": 32,
+    "vision_sequence": 26,
+    "max_linear": 0.004407483040790536,
+    "max_angular": 0.28105813264846796,
+    "reasons": [
+      "disarmed",
+      "emergency_stop",
+      "hand_follow_relative_palm_size"
+    ],
+    "hand_detected": true,
+    "elapsed_seconds": 9.390320293000059,
+    "launch_exit_code": 0,
+    "traceback_in_log": false
+  },
+  "usb_devices": [
+    "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub",
+    "Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub",
+    "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub",
+    "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+  ],
+  "serial_devices": [],
+  "camera_model": "OV5647",
+  "physical_camera_capture": "failed",
+  "camera_errors": [
+    "ROS libcamera 0.7.2 IPA: V4L2 controls require ControlInfoMap",
+    "System libcamera 0.2.0 cam capture: prepareIsp buffers_.end assertion"
+  ],
+  "native_camera_failure_is_below_python_pipeline": true,
+  "diagnostic_libcamera_v4l2_package": "tested then removed; not deployed as workaround",
+  "firmware_uploaded": false,
+  "hardware_motor_commands_sent": false,
+  "hardware_enabled": false,
+  "calibrated": false,
+  "canonical_environment": "source ~/robot_ws/env.sh",
+  "pending": [
+    "Uno USB enumeration",
+    "Native camera stack capture repair",
+    "Confirm encoder/sonar wiring",
+    "Measured wheel/CPR/sign calibration",
+    "RA1 firmware upload and low-output bench test"
+  ],
+  "boot_id": "6369c0fe-4a63-41db-a477-7a509b00002c",
+  "uptime_seconds": 1428.92
+}

@@ -1,0 +1,23 @@
+Record type: transcription of the actual SSH console output, not a downloaded Pi log.
+The original log is on Pi: ~/robot_ws/artifacts/motor_bench_attempt.log
+Pi was later unavailable, so this file must not be described as the original log.
+
+User confirmed all four wheels lifted and reachable 6V power cutoff.
+User then changed USB ports: board power LED on, still no USB device enumeration.
+
+Command:
+source ~/robot_ws/env.sh
+ros2 run rover_autonomy motor_bench_test --ros-args -p wheels_lifted:=true -p pwm:=48 -p duration:=0.5
+
+Observed preceding build/test output:
+Starting >>> rover_autonomy
+Finished <<< rover_autonomy [7.22s]
+Summary: 1 package finished [7.89s]
+111 passed in 2.33s
+
+Observed command result:
+Motor bench test failed: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[ros2run]: Process exited with failure 1
+
+No physical motor command was transmitted. No new firmware was uploaded.
+User requested waiting while they redo all wiring; hardware work was stopped.

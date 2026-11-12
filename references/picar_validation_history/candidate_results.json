@@ -1,0 +1,130 @@
+{
+  "scope": "four narrow fixes in extracted full ZIP working copy; not deployed; not all identified defects repaired",
+  "files_changed": [
+    "web/WebServer.py",
+    "web/RPIservo.py",
+    "web/base_camera.py",
+    "web/functions.py"
+  ],
+  "tests": [
+    {
+      "id": "FIX-HOME",
+      "status": "PASS",
+      "detail": {
+        "returned_positions": [
+          80,
+          100,
+          110
+        ],
+        "mapping": "same channels as original manual commands"
+      }
+    },
+    {
+      "id": "FIX-AUTO",
+      "status": "PASS",
+      "detail": {
+        "final_angle": 120,
+        "minimum_requested_sleep": 0.0,
+        "note": "duration and smoothness require real hardware"
+      }
+    },
+    {
+      "id": "FIX-DIST-0",
+      "status": "PASS",
+      "detail": {
+        "sample": "0",
+        "reads": 1,
+        "motor1": null
+      }
+    },
+    {
+      "id": "FIX-DIST-20",
+      "status": "PASS",
+      "detail": {
+        "sample": "20",
+        "reads": 1,
+        "motor1": null
+      }
+    },
+    {
+      "id": "FIX-DIST-199.5",
+      "status": "PASS",
+      "detail": {
+        "sample": "199.5",
+        "reads": 1,
+        "motor1": null
+      }
+    },
+    {
+      "id": "FIX-DIST-200",
+      "status": "PASS",
+      "detail": {
+        "sample": "200",
+        "reads": 1,
+        "motor1": null
+      }
+    },
+    {
+      "id": "FIX-DIST-201",
+      "status": "PASS",
+      "detail": {
+        "sample": "201",
+        "reads": 6,
+        "motor1": 0
+      }
+    },
+    {
+      "id": "FIX-DIST-nan",
+      "status": "PASS",
+      "detail": {
+        "sample": "nan",
+        "reads": 6,
+        "motor1": 0
+      }
+    },
+    {
+      "id": "FIX-DIST-None",
+      "status": "PASS",
+      "detail": {
+        "sample": "None",
+        "reads": 6,
+        "motor1": 0
+      }
+    },
+    {
+      "id": "FIX-EVENT",
+      "status": "PASS",
+      "detail": {
+        "new_frame_event_set": true
+      }
+    },
+    {
+      "id": "FIX-SYNTAX-web/WebServer.py",
+      "status": "PASS",
+      "detail": {
+        "file": "web/WebServer.py"
+      }
+    },
+    {
+      "id": "FIX-SYNTAX-web/RPIservo.py",
+      "status": "PASS",
+      "detail": {
+        "file": "web/RPIservo.py"
+      }
+    },
+    {
+      "id": "FIX-SYNTAX-web/base_camera.py",
+      "status": "PASS",
+      "detail": {
+        "file": "web/base_camera.py"
+      }
+    },
+    {
+      "id": "FIX-SYNTAX-web/functions.py",
+      "status": "PASS",
+      "detail": {
+        "file": "web/functions.py"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "dataset": "C:\\Users\\happy\\OneDrive\\바탕 화면\\ORCA PROJ 폴더\\새 폴더\\yolo_dataset",
+  "method": "HSV proposals + HOG/color softmax",
+  "evaluation": "Training-separated development validation; 10-second groups; IoU >= 0.5, class matched, one-to-one",
+  "ground_truth": 177,
+  "predictions": 177,
+  "true_positives": 177,
+  "precision": 1.0,
+  "recall": 1.0,
+  "per_class": {
+    "green_light": {
+      "total": 30,
+      "correct": 30,
+      "recall": 1.0
+    },
+    "red_light": {
+      "total": 31,
+      "correct": 31,
+      "recall": 1.0
+    },
+    "left": {
+      "total": 78,
+      "correct": 78,
+      "recall": 1.0
+    },
+    "right": {
+      "total": 38,
+      "correct": 38,
+      "recall": 1.0
+    }
+  },
+  "latency_ms_median": 12.846499914303422,
+  "latency_ms_p95": 17.752520088106394,
+  "missing_images": [],
+  "missed_detections": [],
+  "limitations": "Controlled dataset scenes are not proof of generalization to a different room, lighting or sign design."
+}

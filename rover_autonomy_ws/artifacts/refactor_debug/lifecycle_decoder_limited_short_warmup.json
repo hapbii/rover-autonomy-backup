@@ -1,0 +1,241 @@
+{
+  "warmup_cycles": 20,
+  "measured_cycles": 200,
+  "real_palm_inferences": 220,
+  "decoder_backend": "FFMPEG",
+  "decoder_threads": 1,
+  "elapsed_seconds": 46.74029009998776,
+  "baseline": {
+    "rss": 57356288,
+    "traced": 11185,
+    "handles": 324,
+    "threads": 19,
+    "objects": 31758
+  },
+  "final": {
+    "rss": 64589824,
+    "traced": 21918,
+    "handles": 326,
+    "threads": 21,
+    "objects": 31724
+  },
+  "growth": {
+    "rss": 7233536,
+    "traced": 10733,
+    "handles": 2,
+    "threads": 2,
+    "objects": -34
+  },
+  "samples": [
+    {
+      "cycles": 10,
+      "rss": 57921536,
+      "traced": 12147,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 20,
+      "rss": 57200640,
+      "traced": 12923,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 30,
+      "rss": 58073088,
+      "traced": 13667,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 40,
+      "rss": 57311232,
+      "traced": 14501,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 50,
+      "rss": 58150912,
+      "traced": 15335,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 60,
+      "rss": 62722048,
+      "traced": 16201,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 70,
+      "rss": 62877696,
+      "traced": 16630,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 80,
+      "rss": 57143296,
+      "traced": 17014,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 90,
+      "rss": 58318848,
+      "traced": 17398,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 100,
+      "rss": 63209472,
+      "traced": 17846,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 110,
+      "rss": 64000000,
+      "traced": 18230,
+      "handles": 324,
+      "threads": 19,
+      "objects": 31724
+    },
+    {
+      "cycles": 120,
+      "rss": 57085952,
+      "traced": 18614,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 130,
+      "rss": 62795776,
+      "traced": 18998,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 140,
+      "rss": 65245184,
+      "traced": 19382,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 150,
+      "rss": 64212992,
+      "traced": 19766,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 160,
+      "rss": 63881216,
+      "traced": 20150,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 170,
+      "rss": 64798720,
+      "traced": 20534,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 180,
+      "rss": 57401344,
+      "traced": 20982,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 190,
+      "rss": 64438272,
+      "traced": 21366,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    },
+    {
+      "cycles": 200,
+      "rss": 64589824,
+      "traced": 21750,
+      "handles": 326,
+      "threads": 21,
+      "objects": 31724
+    }
+  ],
+  "python_top_growth": [
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\src\\rover_autonomy\\rover_autonomy\\vision\\hands.py:19",
+      "bytes": -112880,
+      "count": -2046
+    },
+    {
+      "location": "C:\\Users\\happy\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tracemalloc.py:558",
+      "bytes": 7032,
+      "count": 105
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_lifecycle.py:121",
+      "bytes": 5632,
+      "count": 41
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\src\\rover_autonomy\\rover_autonomy\\vision\\signs.py:41",
+      "bytes": -3600,
+      "count": -50
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\.venv\\Lib\\site-packages\\numpy\\core\\fromnumeric.py:59",
+      "bytes": 2445,
+      "count": 56
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\src\\rover_autonomy\\rover_autonomy\\vision\\signs.py:62",
+      "bytes": -1368,
+      "count": -19
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\.venv\\Lib\\site-packages\\psutil\\_pswindows.py:791",
+      "bytes": 736,
+      "count": 23
+    },
+    {
+      "location": "C:\\Users\\happy\\OneDrive\\\ubc14\ud0d5 \ud654\uba74\\ORCA PROJ \ud3f4\ub354\\\uc0c8 \ud3f4\ub354\\rover_autonomy_ws\\scripts\\memory_lifecycle.py:36",
+      "bytes": 672,
+      "count": 23
+    }
+  ],
+  "thresholds": {
+    "retained_python_bytes": 2097152,
+    "rss_growth_bytes": 25165824,
+    "handle_growth": 2,
+    "thread_growth": 1
+  },
+  "scope": "Actual repeated ONNX and local MP4 decoder lifecycle; virtual serial. No physical camera, USB serial, ROS DDS or Pi libcamera.",
+  "passed": false
+}

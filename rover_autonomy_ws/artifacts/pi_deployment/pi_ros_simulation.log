@@ -1,0 +1,17 @@
+[INFO] [launch]: All log files can be found below /home/takyeji/.ros/log/2026-11-12-10-01-40-377160-tak-1943
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [simulation_node-1]: process started with pid [1955]
+[INFO] [supervisor_node-2]: process started with pid [1956]
+[INFO] [base_node-3]: process started with pid [1957]
+[base_node-3] [INFO] [1794477703.295119538] [rover_base]: DRY RUN: no serial port is opened
+[supervisor_node-2] [INFO] [1794477703.374740487] [rover_supervisor]: disarmed
+[simulation_node-1] [INFO] [1794477703.684170178] [rover_simulation]: SIMULATED camera observations, odometry and sonar; no hardware
+[supervisor_node-2] [INFO] [1794477706.063093115] [rover_supervisor]: camera_line_follow
+[supervisor_node-2] [INFO] [1794477706.112798239] [rover_supervisor]: emergency_stop
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [base_node-3]: sending signal 'SIGINT' to process[base_node-3]
+[INFO] [supervisor_node-2]: sending signal 'SIGINT' to process[supervisor_node-2]
+[INFO] [simulation_node-1]: sending signal 'SIGINT' to process[simulation_node-1]
+[INFO] [base_node-3]: process has finished cleanly [pid 1957]
+[INFO] [supervisor_node-2]: process has finished cleanly [pid 1956]
+[INFO] [simulation_node-1]: process has finished cleanly [pid 1955]

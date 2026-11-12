@@ -1,0 +1,198 @@
+{
+  "scope": "Real local perception/controller + simulated chassis/sonar. No ROS runtime or physical vehicle test.",
+  "results": [
+    {
+      "scenario": "line_follow",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 180
+      },
+      "detected_signs": {},
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.867189785779156,
+        -0.00803662793026016,
+        0.035847252756268946
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09994761895740342,
+      "simulation_only": true
+    },
+    {
+      "scenario": "red_green",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 118,
+        "red_light_stop": 62
+      },
+      "detected_signs": {
+        "red_light": 50,
+        "green_light": 50
+      },
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.589999994013105,
+        -1.9019898615367843e-08,
+        -6.447423324870512e-08
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    },
+    {
+      "scenario": "left_turn",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 12,
+        "sign_turn_start": 1,
+        "sign_turn": 49,
+        "sign_turn_complete": 1
+      },
+      "detected_signs": {
+        "left": 53
+      },
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.05999999939116341,
+        -1.967010485932902e-10,
+        1.4791077261488126
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    },
+    {
+      "scenario": "right_turn",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 12,
+        "sign_turn_start": 1,
+        "sign_turn": 49,
+        "sign_turn_complete": 1
+      },
+      "detected_signs": {
+        "right": 53
+      },
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.05999999939116341,
+        -1.967010485932902e-10,
+        -1.4791077392622158
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    },
+    {
+      "scenario": "obstacle",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 312,
+        "avoid_scan_left": 21,
+        "avoid_sample_left": 1,
+        "avoid_settle_left": 4,
+        "avoid_scan_right": 36,
+        "avoid_sample_right": 1,
+        "avoid_settle_right": 4,
+        "avoid_choose_clear_side": 1,
+        "avoid_orient": 35,
+        "avoid_advance": 214,
+        "avoid_return_heading": 19,
+        "avoid_reacquire": 1,
+        "avoid_line_reacquired": 1
+      },
+      "detected_signs": {},
+      "avoidance_states": [
+        "advance",
+        "done",
+        "idle",
+        "orient",
+        "reacquire",
+        "return_heading",
+        "sample_left",
+        "sample_right",
+        "scan_left",
+        "scan_right"
+      ],
+      "final_pose": [
+        1.9555314080336534,
+        0.0034671795928910266,
+        -0.020936618451067115
+      ],
+      "minimum_sonar_m": 0.27500000197871927,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    },
+    {
+      "scenario": "hand_follow",
+      "passed": true,
+      "reasons": {
+        "hand_follow_relative_palm_size": 100,
+        "hand_too_close": 45,
+        "hand_lost": 35
+      },
+      "detected_signs": {},
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.0364061370840067,
+        0.012915083294760437,
+        -0.01364055275917094
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.008652404505227201,
+      "simulation_only": true
+    },
+    {
+      "scenario": "sensor_loss",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 38,
+        "range_stale_or_invalid": 3,
+        "camera_stale": 139
+      },
+      "detected_signs": {},
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.18999999807201745,
+        -1.9724744039493826e-09,
+        -2.0762888673311863e-08
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    },
+    {
+      "scenario": "emergency",
+      "passed": true,
+      "reasons": {
+        "camera_line_follow": 30,
+        "emergency_stop": 150
+      },
+      "detected_signs": {},
+      "avoidance_states": [
+        "idle"
+      ],
+      "final_pose": [
+        0.1499999984779085,
+        -1.229381553708064e-09,
+        -1.639175421577252e-08
+      ],
+      "minimum_sonar_m": 2.0,
+      "max_forward_m_s": 0.09999999898527236,
+      "simulation_only": true
+    }
+  ],
+  "passed": true
+}
