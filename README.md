@@ -20,6 +20,8 @@ python rover_autonomy_ws/tools/verify_github_backup.py --root . --restore-to "D:
 
 이 명령은 `rover_autonomy_ws`, 원래의 `yolo_dataset`, `output/picar_validation` 및 참고 파일 경로를 manifest대로 재구성하고 복사본 해시를 다시 확인합니다. [자세한 복원 안내](RESTORE.md), [파일별 원본/복원 목록](BACKUP_MANIFEST.json), [원격 복원 검증 기록](BACKUP_VERIFICATION.json)을 함께 확인합니다.
 
+**이번 백업의 실제 검증 상태:** 노트북 원본과 백업 작업본 10,188개 파일의 SHA-256 대조 및 GitHub 업로드를 완료했습니다. GitHub에서 별도로 clone하는 작업은 사용자 중단 요청을 처리할 때 이미 끝난 상태였습니다. 사용자가 다음 날 수정 후 다시 커밋할 예정이라 추가 다운로드와 검증을 중단하도록 요청했으므로, **원격 clone의 파일별 SHA-256 검사와 전체 복원 시험은 수행하지 않았습니다.** 원본과 내려받은 폴더를 삭제하지 않았으며 복원 시험을 성공했다고 간주하지 않습니다.
+
 ## 백업에 들어가는 것
 
 | 저장소 경로 | 보존 내용 |

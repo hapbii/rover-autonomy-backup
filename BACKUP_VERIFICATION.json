@@ -1,0 +1,18 @@
+{
+  "status": "full_restore_verification_deferred_by_user",
+  "repository": "https://github.com/hapbii/rover-autonomy-backup",
+  "payload_commit": "e2ab0bf194fa2e1726df43fc15d6719c51212d33",
+  "original_files_verified_locally": 10188,
+  "verified_local_bytes": 1105596286,
+  "source_to_copy_sha256_passed": true,
+  "manifest_sha256": "625ffae66010c9656868d428c2c063b647d542117d3b3f1327c78e45e76af239",
+  "github_push_succeeded": true,
+  "private_repository_confirmed": true,
+  "independent_remote_clone_completed_before_stop_request_was_processed": true,
+  "clone_path": "C:/Users/happy/Documents/rover-autonomy-restore-check-20261112",
+  "remote_clone_file_sha256_verification_performed": false,
+  "full_restore_performed": false,
+  "reason": "User requested no further downloading or restore verification; intends to make more changes and commit again tomorrow.",
+  "pi_original_snapshot_included": false,
+  "source_files_deleted": false
+}
