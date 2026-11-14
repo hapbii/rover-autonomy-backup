@@ -11,7 +11,7 @@ from std_msgs.msg import Bool, Float64MultiArray, Int16MultiArray, String, UInt3
 
 from rover_autonomy.config import HardwareConfig
 from rover_autonomy.hardware.kinematics import WheelOdometry, differential_rpm
-from rover_autonomy.hardware.protocol import SerialLink
+from rover_autonomy.hardware.pi_drive import PiDriveLink
 from rover_autonomy.ros.common import configuration, sensor_qos, spin_main, state_qos
 
 
@@ -43,6 +43,8 @@ class BaseNode(Node):
         self.measured_rpm_pub = self.create_publisher(Float64MultiArray, "/rover/measured_rpm", sensor_qos())
         self.counts_pub = self.create_publisher(UInt32MultiArray, "/rover/encoder_counts", sensor_qos())
         self.pwm_pub = self.create_publisher(Int16MultiArray, "/rover/applied_pwm", sensor_qos())
+        self.ir_pub = self.create_publisher(Int16MultiArray, "/rover/ir", sensor_qos())
+        self.ir_raw_pub = self.create_publisher(Int16MultiArray, "/rover/ir_raw", sensor_qos())
         self.range_pub = self.create_publisher(Range, "/rover/range", sensor_qos())
         self.odom_pub = self.create_publisher(Odometry, "/rover/odom", sensor_qos())
         self.state_pub = self.create_publisher(String, "/rover/base_state", state_qos())
@@ -50,7 +52,7 @@ class BaseNode(Node):
         self.create_subscription(Bool, "/rover/armed", self.on_arm, state_qos())
         self.create_timer(0.05, self.tick)
         self.create_timer(0.2, self.publish_state)
-        self.get_logger().info("LIVE SERIAL OUTPUT" if enabled else "DRY RUN: no serial port is opened")
+        self.get_logger().info("LIVE PI PWM + UNO SENSORS" if enabled else "DRY RUN: no GPIO/serial opened")
 
     def on_command(self, message):
         age = (
@@ -108,7 +110,7 @@ class BaseNode(Node):
             return
         if self.link is None and now >= self.retry_at:
             try:
-                self.link = SerialLink(self.config.port, self.config, now)
+                self.link = PiDriveLink(self.config.port, self.config, now)
                 self.link_fault = ""
                 self.last_telemetry = None
                 self.odom.previous = None
@@ -119,7 +121,10 @@ class BaseNode(Node):
                 self.get_logger().error(self.link_fault, throttle_duration_sec=2.0)
         if self.link is None:
             return
-        self.link.set_arm(self.arm and not self.need_disarm)
+        try:
+            self.link.set_arm(self.arm and not self.need_disarm)
+        except Exception as error:
+            self.link._fail(str(error))
         telemetry = self.link.latest
         # A fresh command alone cannot bypass a missing/too-close front range reading.
         if telemetry is None or not telemetry.flags & 4 or telemetry.range_mm <= 130:
@@ -145,6 +150,11 @@ class BaseNode(Node):
         self.measured_rpm_pub.publish(Float64MultiArray(data=[value.right_rpm, value.left_rpm]))
         self.counts_pub.publish(UInt32MultiArray(data=list(value.counts)))
         self.pwm_pub.publish(Int16MultiArray(data=[value.right_pwm, value.left_pwm]))
+        raw_ir = [int(bool(value.ir_mask & (1 << i))) for i in range(5)]
+        self.ir_raw_pub.publish(Int16MultiArray(data=raw_ir))
+        self.ir_pub.publish(
+            Int16MultiArray(data=[int(bool(raw) != self.config.ir_active_low) for raw in raw_ir])
+        )
         stamp = self.get_clock().now().to_msg()
         distance = Range()
         distance.header.stamp = stamp

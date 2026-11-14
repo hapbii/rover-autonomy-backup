@@ -71,7 +71,7 @@ class ControllerConfig:
 class HardwareConfig:
     enabled: bool = False
     calibrated: bool = False
-    port: str = "/dev/ttyACM0"
+    port: str = "/dev/serial0"
     baud: int = 115200
     wheel_radius_m: float = 0.0
     track_width_m: float = 0.0
@@ -83,8 +83,54 @@ class HardwareConfig:
     pid_ki: float = 0.3
     pid_kd: float = 0.0
     feedforward: float = 1.1
+    # BCM numbering. GPIO12/18 share PWM0; GPIO13/19 share PWM1 on Pi 4.
+    left_pwm_pins: tuple[int, int] = (12, 18)
+    right_pwm_pins: tuple[int, int] = (13, 19)
+    left_direction_pins: tuple[int, int, int, int] = (4, 3, 27, 22)  # AIN1/2, BIN1/2
+    right_direction_pins: tuple[int, int, int, int] = (5, 23, 9, 11)
+    standby_pins: tuple[int, int] = (17, 6)  # left, right
+    motor_signs: tuple[int, int, int, int] = (1, 1, 1, 1)  # LF RF LR RR
+    pwm_frequency: int = 20000
+    ir_active_low: bool = True
 
     def __post_init__(self):
+        groups = {
+            "left_pwm_pins": 2,
+            "right_pwm_pins": 2,
+            "left_direction_pins": 4,
+            "right_direction_pins": 4,
+            "standby_pins": 2,
+        }
+        pins = []
+        for name, size in groups.items():
+            value = getattr(self, name)
+            if (
+                not isinstance(value, (tuple, list))
+                or len(value) != size
+                or any(
+                    isinstance(pin, bool) or not isinstance(pin, int) or not 2 <= pin <= 27 for pin in value
+                )
+            ):
+                raise ValueError(f"{name} requires {size} BCM GPIO numbers from 2 to 27")
+            object.__setattr__(self, name, tuple(value))
+            pins.extend(value)
+        if len(set(pins)) != len(pins):
+            raise ValueError("Motor GPIO assignments overlap")
+        if set(pins) & {14, 15}:
+            raise ValueError("GPIO14/15 are reserved for Uno UART communication")
+        if set(self.left_pwm_pins) != {12, 18} or set(self.right_pwm_pins) != {13, 19}:
+            raise ValueError("Pi 4 wiring requires left PWM0=12/18, right PWM1=13/19")
+        if (
+            not isinstance(self.motor_signs, (tuple, list))
+            or len(self.motor_signs) != 4
+            or any(type(value) is not int or value not in (-1, 1) for value in self.motor_signs)
+        ):
+            raise ValueError("motor_signs must be four +1/-1 integers in LF RF LR RR order")
+        object.__setattr__(self, "motor_signs", tuple(self.motor_signs))
+        if type(self.pwm_frequency) is not int or not 100 <= self.pwm_frequency <= 100000:
+            raise ValueError("pwm_frequency must be 100..100000 Hz")
+        if type(self.ir_active_low) is not bool:
+            raise ValueError("ir_active_low must be boolean")
         if not isinstance(self.enabled, bool) or not isinstance(self.calibrated, bool):
             raise ValueError("enabled/calibrated must be YAML booleans")
         if not isinstance(self.port, str) or not self.port:
@@ -160,9 +206,9 @@ class HardwareConfig:
             or self.pid_kd > 5
             or self.feedforward > 5
         ):
-            raise ValueError("PID/PWM limits must match the RA1 firmware")
+            raise ValueError("PID/PWM limits exceeded")
         if self.baud != 115200:
-            raise ValueError("RA1 firmware uses 115200 baud")
+            raise ValueError("RA2 sensor firmware uses 115200 baud")
 
 
 def load_configuration(path: str | Path) -> dict:

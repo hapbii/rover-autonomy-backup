@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src/rover_autonomy"))
 from memory_soak import BoundedWire
 from rover_autonomy.hardware.camera import OpenCVCamera
-from rover_autonomy.hardware.protocol import SerialLink
+from rover_autonomy.hardware.sensor_protocol import SensorLink as SerialLink
 from rover_autonomy.vision.hands import PalmDetector
 from rover_autonomy.vision.pipeline import PerceptionPipeline
 
@@ -66,7 +66,6 @@ def one_cycle(video, config):
         camera = resources.enter_context(closing(OpenCVCamera(str(video), 320, 240, 12)))
         wire = BoundedWire()
         link = resources.enter_context(closing(SerialLink("virtual only", config, 0, wire)))
-        link.set_arm(False)
         link.tick(2.1)
         link.tick(2.2)
         link.tick(2.3)

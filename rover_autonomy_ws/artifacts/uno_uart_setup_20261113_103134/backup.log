@@ -1,0 +1,12 @@
+
+Processing -U flash:r:flash_before.hex:i
+Reading flash memory ...
+Reading | ###########--------------------------------------- | 23% 1.87s
+
+Error: protocol expects sync byte 0x14 but got 0x45
+Error: programmer is out of sync
+Error: unable to read byte at address 0x0000
+Error: unable to read all of flash (rc = -2)
+Error: protocol expects sync byte 0x14 but got 0x32
+
+Avrdude done.  Thank you.

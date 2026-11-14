@@ -1,0 +1,13 @@
+avrdude.exe: stk500_getsync() attempt 1 of 10: not in sync: resp=0x45
+avrdude.exe: stk500_getsync() attempt 2 of 10: not in sync: resp=0x4d
+avrdude.exe: stk500_getsync() attempt 3 of 10: not in sync: resp=0x32
+avrdude.exe: stk500_getsync() attempt 4 of 10: not in sync: resp=0x20
+avrdude.exe: stk500_getsync() attempt 5 of 10: not in sync: resp=0x42
+avrdude.exe: stk500_getsync() attempt 6 of 10: not in sync: resp=0x4f
+avrdude.exe: stk500_getsync() attempt 7 of 10: not in sync: resp=0x4f
+avrdude.exe: stk500_getsync() attempt 8 of 10: not in sync: resp=0x54
+avrdude.exe: stk500_getsync() attempt 9 of 10: not in sync: resp=0x0d
+avrdude.exe: stk500_getsync() attempt 10 of 10: not in sync: resp=0x0a
+
+avrdude.exe done.  Thank you.
+

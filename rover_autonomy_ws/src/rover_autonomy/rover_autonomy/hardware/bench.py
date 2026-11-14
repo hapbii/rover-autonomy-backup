@@ -1,4 +1,4 @@
-"""Finite EM2 PWM phases for two driver groups; no RPM/calibration claims."""
+"""Finite Pi PWM phases; legacy EM2 feedback parser kept for offline regression."""
 
 import math
 

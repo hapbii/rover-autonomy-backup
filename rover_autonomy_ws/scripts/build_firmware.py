@@ -1,4 +1,4 @@
-"""Compile the RA1 Uno firmware and save the compiler's memory-size report."""
+"""Compile RA2 sensor-only Uno firmware and save the memory-size report."""
 
 import os
 import subprocess
@@ -22,7 +22,7 @@ def main():
         "all",
         "--output-dir",
         str(output),
-        str(ROOT / "firmware/rover_camera"),
+        str(ROOT / "firmware/rover_sensors"),
     ]
     result = subprocess.run(
         command, text=True, encoding="utf-8", errors="replace", capture_output=True, env=arduino_environment()

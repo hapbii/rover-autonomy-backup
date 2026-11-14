@@ -1,8 +1,8 @@
 {
   "file": "rover_autonomy_pi_bundle.zip",
-  "bytes": 2799443,
-  "files": 95,
-  "sha256": "ab582601b2c39bd4ecdb7527dc4cb6e6b86154f40de90911a26a115511985a86",
+  "bytes": 2820190,
+  "files": 121,
+  "sha256": "97bfd53e14a3addb1dd92a24873812bac1d656b66d034964cfde3d324de71067",
   "uploaded": true,
   "excludes": [
     ".venv",
@@ -11,7 +11,7 @@
     "unverified source photos/models",
     "demo MP4s"
   ],
-  "remote_workspace": "/home/takyeji/robot_ws",
-  "verified_at": "2026-11-12T10:14:05.440249+00:00",
-  "source_files_verified": 79
+  "deployed_to": "/home/takyeji/robot_ws",
+  "source_files_verified": 95,
+  "deployed_at": "2026-11-13T11:05:52.961494+00:00"
 }

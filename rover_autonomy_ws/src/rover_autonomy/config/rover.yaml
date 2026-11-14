@@ -34,7 +34,7 @@ controller:
 hardware:
   enabled: false
   calibrated: false
-  port: /dev/ttyACM0
+  port: /dev/serial0  # GPIO14 TX / GPIO15 RX; Uno TX requires 5V->3.3V conversion
   baud: 115200
   # Must measure all three; 0 prevents live output.
   wheel_radius_m: 0.0
@@ -47,3 +47,12 @@ hardware:
   pid_ki: 0.3
   pid_kd: 0.0
   feedforward: 1.1
+  # Raspberry Pi 4 BCM numbering; each side shares one hardware PWM channel.
+  left_pwm_pins: [12, 18]
+  right_pwm_pins: [13, 19]
+  left_direction_pins: [4, 3, 27, 22]  # AIN1, AIN2, BIN1, BIN2
+  right_direction_pins: [5, 23, 9, 11]
+  standby_pins: [17, 6]  # left driver 1, right driver 2
+  motor_signs: [1, 1, 1, 1]  # LF RF LR RR; verify actual A/front B/rear mapping
+  pwm_frequency: 20000
+  ir_active_low: true  # verify black/white polarity with the actual IR board

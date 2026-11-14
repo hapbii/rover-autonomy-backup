@@ -31,11 +31,22 @@ def main():
         "artifacts/environment_report.json",
         "artifacts/test_report.xml",
         "artifacts/firmware/build_report.txt",
+        "artifacts/pin_migration_20261113/test_report.xml",
+        "artifacts/uart_deployment/backup.json",
+        "artifacts/uart_deployment/pwm_zero_watchdog.json",
+        "artifacts/uart_deployment/ros_simulation.json",
+        "artifacts/uart_deployment/ros_image.json",
+        "artifacts/uart_deployment/camera_python.json",
+        "artifacts/uart_deployment/camera_ros.json",
+        "artifacts/uart_deployment/camera_native.json",
+        "artifacts/uart_deployment/environment.json",
+        "artifacts/uart_deployment/pi_test_report.xml",
     ):
         path = ROOT / relative
         if path.is_file():
             paths.append(path)
-    paths += list((ROOT / "artifacts/firmware").glob("*.hex"))
+    # Never ship stale RA1/EM2 binaries from earlier builds with the new sensor wiring.
+    paths += list((ROOT / "artifacts/firmware").glob("rover_sensors.ino*.hex"))
     for pattern in ("*.json", "*.xml"):
         paths += list((ROOT / "artifacts/pi_deployment").glob(pattern))
     unique = sorted(set(paths))

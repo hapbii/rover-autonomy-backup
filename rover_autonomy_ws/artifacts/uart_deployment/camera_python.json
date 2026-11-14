@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "frames": 30,
+  "shape": [
+    480,
+    640,
+    3
+  ],
+  "elapsed_seconds": 3.0560641740000847,
+  "fps": 9.816547785622243,
+  "mean": 105.12950954861111,
+  "std": 73.9751516547703,
+  "preview": "/home/takyeji/robot_ws/artifacts/pi_camera_preview.jpg",
+  "environment": {
+    "PYTHONPATH": "/home/takyeji/rover_support/libcamera-v0.2.0-fixed/build/src/py:/home/takyeji/rover_support/kmsxx/build/py:/home/takyeji/robot_ws/build/rover_autonomy:/home/takyeji/robot_ws/install/rover_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages",
+    "LD_LIBRARY_PATH": "/home/takyeji/robot_ws/.venv/lib/python3.12/site-packages/cv2/../../lib64:/home/takyeji/rover_support/libcamera-v0.2.0-fixed/build/src/libcamera/base:/home/takyeji/rover_support/libcamera-v0.2.0-fixed/build/src/libcamera:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib"
+  },
+  "libcamera_binding": "/home/takyeji/rover_support/libcamera-v0.2.0-fixed/build/src/py/libcamera/__init__.py",
+  "picamera2": "0.3.17",
+  "hardware_motor_output": false
+}

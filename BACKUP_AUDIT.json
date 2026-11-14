@@ -1,9 +1,21 @@
 {
-  "at": "2026-11-12T14:37:13.140514+00:00",
-  "original_files_verified": 10188,
-  "verified_bytes": 1105596286,
-  "source_to_copy_sha256_passed": true,
-  "manifest_sha256": "625ffae66010c9656868d428c2c063b647d542117d3b3f1327c78e45e76af239",
+  "at": "2026-11-14T15:51:58.772443+00:00",
+  "previous_commit": "d40d26ced509cefe39ecfcdcd181640dcfd05c65",
+  "original_files_verified": 10797,
+  "source_to_copy_files_verified": 7006,
+  "manifest_files": 10797,
+  "verified_bytes": 1122865308,
+  "staged_payload_git_blob_ids_verified": 10797,
+  "manifest_sha256": "12bf2ce86b6df6065b35c0dcc63e01c830fafb87a77480e69f059b229ed854d3",
+  "payload_changes": {
+    "added": 609,
+    "modified": 44,
+    "deleted": 0
+  },
+  "historical_missing_reference_files_retained": 0,
+  "secret_scan_hits": 0,
   "pi_original_snapshot_included": false,
-  "source_files_deleted": false
+  "source_files_deleted": false,
+  "full_restore_performed": false,
+  "remote_full_clone_performed": false
 }

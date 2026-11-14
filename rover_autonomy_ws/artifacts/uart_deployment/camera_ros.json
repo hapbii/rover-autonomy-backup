@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "physical_camera": true,
+  "frames": 20,
+  "fps": 12.056038905420847,
+  "node_exit": 0,
+  "hardware_motor_output": false,
+  "uart_opened": false
+}

@@ -1,4 +1,4 @@
-"""Read RA1 raw counts while wheels are turned by hand. Never sends CFG/ARM/V."""
+"""Read RA2 sensor counts/sonar/IR by hand. Never opens Pi motor GPIO."""
 
 import argparse
 import sys
@@ -15,7 +15,7 @@ from rover_autonomy.hardware.protocol import READY, parse_telemetry
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", default="/dev/ttyACM0")
+    parser.add_argument("--port", default="/dev/serial0")
     parser.add_argument("--duration", type=float, default=20)
     args = parser.parse_args()
     if not 1 <= args.duration <= 300:
@@ -39,12 +39,14 @@ def main():
                     text = raw.decode("ascii", errors="replace").strip()
                     if text == READY:
                         identified = True
-                        print("RA1 identified. Turn one output shaft by hand; order LF RF LR RR.", flush=True)
-                    elif text.startswith("EM2 "):
-                        raise RuntimeError(
-                            "Old PWM bench firmware detected; install RA1 before encoder wiring"
+                        connection.write(b"CFG 1 1 1 1\n")
+                        print(
+                            "RA2 identified. Turn one shaft by hand; LF RF LR RR. IR order left->right.",
+                            flush=True,
                         )
-                    elif identified and text.startswith("T "):
+                    elif text.startswith(("EM2 ", "RA1 ")):
+                        raise RuntimeError("Old motor firmware detected; upload RA2 before sensor wiring")
+                    elif identified and text.startswith("S "):
                         value = parse_telemetry(text)
                         if baseline is None:
                             baseline = value.counts
@@ -53,13 +55,23 @@ def main():
                                 signed_count_delta(current, old)
                                 for current, old in zip(value.counts, baseline, strict=True)
                             ]
-                            print("counts since start:", *delta, "sonar_mm:", value.range_mm, flush=True)
+                            print(
+                                "counts since start:",
+                                *delta,
+                                "sonar_mm:",
+                                value.range_mm,
+                                "IR raw:",
+                                value.ir_mask,
+                                "IR active-low:",
+                                value.ir_values(),
+                                flush=True,
+                            )
                             last_display = time.monotonic()
             if not identified:
-                raise RuntimeError("Matching RA1 firmware not detected")
+                raise RuntimeError("Matching RA2 firmware not detected")
         finally:
-            if identified:
-                connection.write(b"STOP\n")
+            # Sensor-only firmware has no motor output or ARM command to release.
+            pass
 
 
 if __name__ == "__main__":

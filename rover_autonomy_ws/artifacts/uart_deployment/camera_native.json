@@ -1,0 +1,8 @@
+{
+  "source": "/home/takyeji/rover_support/libcamera-v0.2.0-fixed",
+  "version": "0.2.0",
+  "capture_frames": 3,
+  "fix": "Initialize params.buffers.embedded before conditional assignment",
+  "upstream": "https://lists.libcamera.org/pipermail/libcamera-devel/2024-January/040367.html",
+  "system_libraries_replaced": false
+}

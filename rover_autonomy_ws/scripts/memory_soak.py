@@ -21,7 +21,8 @@ import psutil
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src/rover_autonomy"))
 from rover_autonomy.control.supervisor import Supervisor
-from rover_autonomy.hardware.protocol import READY, SerialLink
+from rover_autonomy.hardware.sensor_protocol import READY
+from rover_autonomy.hardware.sensor_protocol import SensorLink as SerialLink
 from rover_autonomy.simulation import World
 from rover_autonomy.transport import decode_vision, encode_vision
 from rover_autonomy.types import Mode, Range
@@ -37,7 +38,7 @@ class BoundedWire:
         self.sequence = 0
         self.recent = deque(maxlen=4)
         self.closed = False
-        self.armed = False
+        self.configured = False
 
     def write(self, data):
         text = data.decode().strip()
@@ -45,22 +46,21 @@ class BoundedWire:
         reply = ""
         if text == "HELLO":
             reply = READY + "\n"
+            self.configured = False
         elif text.startswith("CFG "):
-            reply = "RA1 CONFIGURED\n"
-        elif text == "ARM":
-            self.armed = True
-            reply = "RA1 ARMED\n"
-        elif text == "STOP":
-            self.armed = False
-            reply = "RA1 STOPPED\n"
-        reply += f"T {self.sequence} 0 0 0 0 0 0 0 0 2000 {5 if self.armed else 4}\n"
-        self.sequence += 1
+            reply = "RA2 CONFIGURED\n"
+            self.configured = True
         self.incoming.extend(reply.encode())
         if len(self.incoming) > 4096:
             raise AssertionError("Test wire queue unexpectedly grew")
         return len(data)
 
     def read(self, size):
+        if self.configured:
+            self.incoming.extend(
+                f"S {self.sequence} {(100000 + self.sequence * 50000) % 2**32} 0 0 0 0 2000 4 31\n".encode()
+            )
+            self.sequence = (self.sequence + 1) % 2**32
         data = bytes(self.incoming[:size])
         del self.incoming[:size]
         return data
@@ -99,7 +99,6 @@ def run(args, resources):
     wire = BoundedWire()
     link = SerialLink("virtual only", config, 0, wire)
     resources.callback(link.close)
-    link.set_arm(False)
     process = psutil.Process()
     samples = deque(maxlen=256)
     durations = deque(maxlen=1024)
@@ -128,8 +127,6 @@ def run(args, resources):
             command = controller.tick(now)
             world.advance(command, 0.01)
             link.tick(now)
-            if link.state == "configured":
-                link.set_arm(True)
             if link.state == "fault":
                 raise AssertionError(link.fault)
             durations.append((time.perf_counter() - begin) * 1000)

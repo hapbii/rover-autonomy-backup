@@ -9,11 +9,16 @@ from pathlib import Path
 import paramiko
 
 
-def run(client, request):
+def run(client, request, password=None):
     command = request.get("command", "python3 -u -")
     remote_in, remote_out, _ = client.exec_command(command)
     channel = remote_out.channel
     try:
+        if request.get("sudo"):
+            if password is None or "sudo -k -S" not in command:
+                raise ValueError("Sudo requests must force password consumption with sudo -k -S")
+            remote_in.write(password + "\n")
+            remote_in.flush()
         if request.get("script"):
             remote_in.write(Path(request["script"]).read_text(encoding="utf-8"))
             remote_in.flush()
@@ -42,7 +47,6 @@ def main():
         password = getpass.getpass("SSH password: ")
         client.connect("192.168.50.34", username="takyeji", password=password,
                        timeout=12, auth_timeout=12, look_for_keys=False, allow_agent=False)
-        del password
         client.get_transport().set_keepalive(15)
         print(json.dumps({"connected": "takyeji@192.168.50.34"}), flush=True)
         for line in sys.stdin:
@@ -62,7 +66,7 @@ def main():
                         transfer.get(request["remote"], request["local"])
                     print(json.dumps({"downloaded": request["local"]}), flush=True)
                 else:
-                    run(client, request)
+                    run(client, request, password)
             except Exception as error:
                 print(json.dumps({"error": type(error).__name__, "detail": str(error)}), flush=True)
     finally:

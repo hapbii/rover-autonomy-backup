@@ -1,3 +1,29 @@
+# 최신 UART 배포 상태 — 2026-11-13
+
+- SSH 접속·Pi 새 코드 배포·ROS 빌드 완료. 전체 백업 `/home/takyeji/robot_ws_backup_20261113_102324` 일반 파일 1,503개 및 메타데이터 검증.
+- 통신은 USB 대신 Pi GPIO14 TX→Uno D0 RX, Uno D1 TX→5V/3.3V 변환→Pi GPIO15 RX. 기본 `/dev/serial0`은 udev 규칙으로 `/dev/ttyAMA0`에 연결. 시리얼 콘솔 해제·disable-bt·I2C/SPI/아날로그 오디오 해제 후 재부팅·재접속 완료. 모터 GPIO14/15 예약 검사 추가.
+- 공식 pigpiod v79 별도 빌드·설치. localhost-only 실행. IPv6 localhost 바인딩 때문에 코드 접속을 localhost로 수정. 실제 PWM 0/감시 timeout latch·출력 거부·STBY LOW 확인. 비영 PWM·모터 구동은 실행하지 않음.
+- 가상 주행·공개 참조 이미지 손 추종 ROS 통합 시험 통과. 최종 로컬 테스트 150개 및 Ruff 통과. 최종 Pi 재시험도 150개 통과, Ruff 오류 없음.
+- 카메라 해결: libcamera 0.2.0 embedded-buffer 초기화 결함을 별도 소스 트리에서 수정. native 3프레임, PiCamera 30프레임, 실제 ROS 20프레임 약12fps와 정상 종료 확인. `source env.sh`가 별도 camera_env.sh를 불러 검증한 라이브러리/Python 경로 적용. 기본 시스템/ROS 라이브러리 보존.
+- 지원 소스는 ~/rover_support/libcamera-v0.2.0-fixed 및 kmsxx. Picamera2 0.3.17. 재현 스크립트 scripts/build_camera_stack.py, 선택 의존성 requirements-camera-pi.txt. 이 Pi 지원 폴더가 이전 노트북/GitHub 백업에 들어 있다고 가정하지 말 것.
+- Uno는 노트북 COM8에서 인식되며 EM2 BOOT 응답. 사용자 D0/D1 분리·모터 전원 OFF 확인. flash/EEPROM 읽기와 업로드는 부트로더 sync 실패. 보드 새 백업/RA2 업로드 성공으로 보고하지 말 것. 사용자 RESET 1회 후에도 해결 안 됨. 전체 배선 분리는 현재 어렵다는 답변에 따라 추가 리셋·업로드 재시도 중단.
+- UART 레벨 변환은 아직 준비 확인 안 됨. Uno TX 5V→Pi RX 직결 금지와 1kΩ/2kΩ 분압 안내. 변환과 새 RA2 전에는 실제 UART/실차 통합을 진행하지 않음. 기본 enabled/calibrated=false.
+- 상세: UART_DEPLOYMENT_REPORT.md, WIRING.md. 아래는 이전 시점 기록이며 최신 상태와 구분할 것.
+
+---
+
+# 최신 상태 — 2026-11-13 Pi 모터 제어 전환
+
+- 사용자 확정: 1번 왼쪽, 2번 오른쪽. PWM은 왼쪽 12/18, 오른쪽 13/19 BCM GPIO에 각 입력을 따로 연결해 공유 채널로 제어.
+- 최종 방향핀: 왼쪽 AIN1/2=4/3, BIN1/2=27/22, STBY=17. 오른쪽 AIN1/2=5/23, BIN1/2=9/11, STBY=6. 오른쪽 AIN2는 기존 GPIO0 대신23 배정했음을 사용자에게 명시할 것.
+- Uno 엔코더는 LF2/4 RF6/7 LRA3/A4 RRA2/A5 유지. 초음파 A0/A1, IR 왼쪽부터 D8~D12. D0/D1 USB 예약.
+- 로컬 코드: Pi PWM/PID + RA2 센서 펌웨어·USB 통신·ROS base/bench·IR 토픽·설정·배선 문서 변경. 148 테스트 및 Ruff 통과, 새 Uno RA2 컴파일 성공. 실제 Pi 전송/ROS 빌드/업로드/모터 실행은 아직 하지 않음.
+- 기본 enabled/calibrated=false 유지. 새 의존성은 pigpio Python 클라이언트와 별도 로컬 pigpiod. Pi 4 backend만 구현. IR은 디지털 OUT 가정, 실제 규격·극성 확인 필요. IR 자동 라인 전환 없음.
+- 이전 RA1/EM2 보드 펌웨어는 IR 핀을 출력으로 설정하므로 센서 연결 전에 RA2 업로드. 이전 sketch 경로는 빌드를 차단하고 rover_sensors 경로를 안내.
+- 상세: WIRING.md, README.md, PIN_MIGRATION_REPORT.md. 아래 기록은 이전 배포 당시 상태이며 현재 핀 지시가 아님.
+
+---
+
 # 다음 작업을 위한 상태 기록 — 2026-11-12
 
 ## 최신 중단·백업 상태

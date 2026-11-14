@@ -1,0 +1,15 @@
+{
+  "stby_before": {
+    "17": 0,
+    "6": 0
+  },
+  "stby_after": {
+    "17": 0,
+    "6": 0
+  },
+  "watchdog_status": 1,
+  "timeout_latched": 1,
+  "output_refused": "Motor control heartbeat expired",
+  "pwm_nonzero_requested": false,
+  "uart_opened": false
+}

@@ -1,0 +1,11 @@
+{
+  "source": "/home/takyeji/robot_ws",
+  "backup": "/home/takyeji/robot_ws_backup_20261113_102324",
+  "verified": true,
+  "files": 1503,
+  "file_bytes": 98909936,
+  "fifo_metadata_preserved": [
+    ".lgd-nfy0"
+  ],
+  "verified_at": "2026-11-13T10:23:29.032067+00:00"
+}

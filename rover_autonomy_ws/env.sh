@@ -5,4 +5,5 @@ source /opt/ros/jazzy/setup.bash
 [ ! -f "$_ROVER_WS/install/setup.bash" ] || source "$_ROVER_WS/install/setup.bash"
 export ROS_DOMAIN_ID="${ROS_DOMAIN_ID:-9}"
 export ROS_AUTOMATIC_DISCOVERY_RANGE=SUBNET
+[ ! -f "$_ROVER_WS/scripts/camera_env.sh" ] || source "$_ROVER_WS/scripts/camera_env.sh"
 unset _ROVER_WS

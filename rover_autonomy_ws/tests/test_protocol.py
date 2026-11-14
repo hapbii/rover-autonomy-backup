@@ -2,7 +2,7 @@ from dataclasses import replace
 
 import pytest
 from rover_autonomy.hardware.kinematics import WheelOdometry, differential_rpm, signed_count_delta
-from rover_autonomy.hardware.protocol import READY, SerialLink
+from rover_autonomy.hardware.legacy_protocol import READY, SerialLink
 
 from rover_autonomy.config import HardwareConfig
 
